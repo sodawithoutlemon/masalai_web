@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masallar – Fabu | Klasik ve Kişiselleştirilmiş Masallar</title>
+  <meta name="description" content="Kül Kedisi'nden Pamuk Prenses'e, klasik dünya masalları ve yapay zeka ile oluşturulan kişiselleştirilmiş hikayeler. Fabu ile masal dünyasını keşfedin.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fabuapp.com/stories.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fabu Masallar – Klasik ve Kişiselleştirilmiş Hikayeler">
+  <meta property="og:description" content="Yüzlerce klasik masal ve yapay zeka ile oluşturulmuş kişisel hikayeler.">
+  <meta property="og:url" content="https://fabuapp.com/stories.html">
+  <meta property="og:locale" content="tr_TR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Nunito', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="mobile-overlay"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="header-logo flex items-center gap-2">
+        <img src="images/logo/fabu.png" alt="Fabu Logo" width="42" height="42">
+        <span class="font-display text-xl font-black text-purple-900 hidden sm:block">Fabu</span>
+      </a>
+      <nav class="nav-menu flex items-center gap-8">
+        <a href="index.html" class="nav-link">Ana Sayfa</a>
+        <a href="features.html" class="nav-link">Özellikler</a>
+        <a href="stories.html" class="nav-link active">Masallar</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="index.html#ebeveynler" class="nav-link">Ebeveynler</a>
+        <a href="index.html#iletisim" class="nav-link">İletişim</a>
+        <a href="index.html#indir" class="btn-primary">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3"/></svg>
+          Uygulamayı İndir
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <nav class="breadcrumb mb-6">
+        <a href="index.html">Ana Sayfa</a>
+        <span>/</span>
+        <span class="text-purple-700 font-semibold">Masallar</span>
+      </nav>
+      <h1 class="font-display text-4xl sm:text-5xl font-black text-purple-950 mb-4">
+        Masal <span class="gradient-text-warm">Kütüphanesi</span>
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl">Dünyanın en sevilen klasik masalları ve yapay zeka ile oluşturulmuş benzersiz hikayeler, Fabu'nun büyülü kütüphanesinde.</p>
+    </div>
+  </section>
+
+  <!-- CLASSIC STORIES -->
+  <section class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-amber-100 text-amber-700 text-sm font-bold mb-4">Klasik Masallar</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-black text-purple-950 mb-4">Zamansız <span class="gradient-text-warm">Klasikler</span></h2>
+        <p class="text-gray-500 text-lg max-w-2xl mx-auto">Yüzyıllardır çocukların hayal dünyasını zenginleştiren efsanevi masallar.</p>
+      </div>
+
+      <div class="story-grid" id="stories-grid">
+        <!-- Loaded from JSON by blog-loader.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- AI STORIES SECTION -->
+  <section class="section-padding bg-white relative overflow-hidden">
+    <div class="section-blob w-96 h-96 bg-purple-200 top-0 right-0 -translate-y-1/2 translate-x-1/2" style="position:absolute;filter:blur(100px);opacity:0.2;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 text-sm font-bold mb-4">Yapay Zeka Masalları</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-black text-purple-950 mb-6">Her Çocuk İçin <span class="gradient-text">Benzersiz</span> Hikayeler</h2>
+          <p class="text-gray-500 leading-relaxed mb-6">Fabu'nun yapay zeka motoru, çocuğunuzun adını, ilgi alanlarını ve yaş grubunu dikkate alarak her seferinde tamamen yeni ve özgün masallar oluşturur.</p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-sm flex-shrink-0">✨</span>
+              <span class="text-gray-600">Çocuğunuzun adı hikayenin kahramanı olsun</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center text-sm flex-shrink-0">🎨</span>
+              <span class="text-gray-600">Her masalda özgün illüstrasyonlar</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-sm flex-shrink-0">📖</span>
+              <span class="text-gray-600">Sınırsız tema ve macera seçeneği</span>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center reveal reveal-delay-1">
+          <div class="relative">
+            <img src="images/screenshots/6.jpg" alt="Fabu AI Masallar" class="rounded-2xl shadow-xl max-w-xs" loading="lazy" width="280" height="560">
+            <div class="hero-floating-element absolute -top-4 -right-8 bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3">
+              <span class="text-2xl">🧙‍♂️</span>
+            </div>
+            <div class="hero-floating-element absolute -bottom-4 -left-8 bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-2" style="animation-delay:0.5s">
+              <span class="text-sm font-bold text-purple-300">Sınırsız Masal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section-padding relative">
+    <div class="cta-glow bg-purple-300 top-0 left-1/4"></div>
+    <div class="cta-glow bg-amber-200 bottom-0 right-1/4"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="reveal">
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-purple-950 mb-6 leading-tight">Masal Dünyasını Keşfetmeye Başlayın</h2>
+        <p class="text-lg text-gray-600 mb-10 max-w-xl mx-auto">Yüzlerce klasik masal ve sınırsız yapay zeka hikayesi sizi bekliyor.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#" class="btn-store btn-store-dark">
+            <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="store-text"><span class="store-label">App Store'dan</span><span class="store-name">İndirin</span></div>
+          </a>
+          <a href="#" class="btn-store btn-store-purple">
+            <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 1.458L16.8 7.791 14.5 10.093 5.864 1.458z"/></svg>
+            <div class="store-text"><span class="store-label">Google Play'den</span><span class="store-name">İndirin</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="sm:col-span-2 lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-2 mb-4">
+            <img src="images/logo/fabu.png" alt="Fabu Logo" width="36" height="36" class="rounded-lg">
+            <span class="font-display text-xl font-black text-white">Fabu</span>
+          </a>
+          <p class="text-sm text-gray-400 leading-relaxed mb-6">Yapay zeka destekli kişiselleştirilmiş çocuk masalları uygulaması.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">Uygulama</h4>
+          <ul class="space-y-3">
+            <li><a href="features.html" class="footer-link">Özellikler</a></li>
+            <li><a href="stories.html" class="footer-link">Masallar</a></li>
+            <li><a href="index.html#indir" class="footer-link">İndir</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">Kaynaklar</h4>
+          <ul class="space-y-3">
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Destek</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">Yasal</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="footer-link">Gizlilik Politikası</a></li>
+            <li><a href="#" class="footer-link">Kullanım Şartları</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between pt-8 gap-4">
+        <p class="text-sm text-gray-500">&copy; 2026 Fabu. Tüm hakları saklıdır.</p>
+        <p class="text-sm text-gray-500">Hassasiyetle tasarlandı. Çocuklar için sevgiyle yapıldı.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Başa dön">
+    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/blog-loader.js"></script>
+</body>
+</html>

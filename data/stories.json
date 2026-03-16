@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Kül Kedisi",
+    "emoji": "👠",
+    "author": "Charles Perrault",
+    "category": "Klasik"
+  },
+  {
+    "id": 2,
+    "title": "Pinokyo",
+    "emoji": "🤥",
+    "author": "Carlo Collodi",
+    "category": "Klasik"
+  },
+  {
+    "id": 3,
+    "title": "Pamuk Prenses",
+    "emoji": "🍎",
+    "author": "Grimm Kardeşler",
+    "category": "Klasik"
+  },
+  {
+    "id": 4,
+    "title": "Alice Harikalar Diyarında",
+    "emoji": "🐇",
+    "author": "Lewis Carroll",
+    "category": "Fantastik"
+  },
+  {
+    "id": 5,
+    "title": "Küçük Prens",
+    "emoji": "⭐",
+    "author": "Saint-Exupéry",
+    "category": "Klasik"
+  },
+  {
+    "id": 6,
+    "title": "Rapunzel",
+    "emoji": "👸",
+    "author": "Grimm Kardeşler",
+    "category": "Klasik"
+  },
+  {
+    "id": 7,
+    "title": "Bremen Mızıkacıları",
+    "emoji": "🎵",
+    "author": "Grimm Kardeşler",
+    "category": "Klasik"
+  },
+  {
+    "id": 8,
+    "title": "Deniz Kızı",
+    "emoji": "🧜‍♀️",
+    "author": "H.C. Andersen",
+    "category": "Klasik"
+  },
+  {
+    "id": 9,
+    "title": "Uyuyan Güzel",
+    "emoji": "💤",
+    "author": "Charles Perrault",
+    "category": "Klasik"
+  },
+  {
+    "id": 10,
+    "title": "Hansel ve Gretel",
+    "emoji": "🍭",
+    "author": "Grimm Kardeşler",
+    "category": "Klasik"
+  },
+  {
+    "id": 11,
+    "title": "Çirkin Ördek Yavrusu",
+    "emoji": "🦢",
+    "author": "H.C. Andersen",
+    "category": "Klasik"
+  },
+  {
+    "id": 12,
+    "title": "Peter Pan",
+    "emoji": "🧚",
+    "author": "J.M. Barrie",
+    "category": "Fantastik"
+  },
+  {
+    "id": 13,
+    "title": "Kırmızı Başlıklı Kız",
+    "emoji": "🐺",
+    "author": "Charles Perrault",
+    "category": "Klasik"
+  },
+  {
+    "id": 14,
+    "title": "Oz Büyücüsü",
+    "emoji": "🌪️",
+    "author": "L. Frank Baum",
+    "category": "Fantastik"
+  },
+  {
+    "id": 15,
+    "title": "Güzel ve Çirkin",
+    "emoji": "🌹",
+    "author": "Villeneuve",
+    "category": "Klasik"
+  },
+  {
+    "id": 16,
+    "title": "Jack ve Fasulye Sırığı",
+    "emoji": "🌱",
+    "author": "İngiliz Halk Masalı",
+    "category": "Klasik"
+  }
+]

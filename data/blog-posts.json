@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Masal Okumanın Çocuk Gelişimine Faydaları",
+    "excerpt": "Düzenli masal dinleyen çocukların dil gelişimi, hayal gücü ve duygusal zekası akranlarına göre çok daha hızlı gelişiyor. İşte bilimsel araştırmaların söyledikleri.",
+    "category": "Çocuk Gelişimi",
+    "date": "12 Mart 2026",
+    "readTime": "5 dk okuma",
+    "emoji": "🧒"
+  },
+  {
+    "id": 2,
+    "title": "Uyku Öncesi Hikaye Okumanın Önemi",
+    "excerpt": "Uyku öncesi hikaye ritüeli, çocuğunuzun daha huzurlu uyumasını sağlar ve aile bağlarını güçlendirir. Bu alışkanlığı nasıl başlatabilirsiniz?",
+    "category": "Ebeveyn Rehberi",
+    "date": "8 Mart 2026",
+    "readTime": "4 dk okuma",
+    "emoji": "🌙"
+  },
+  {
+    "id": 3,
+    "title": "Çocukların Hayal Gücü Nasıl Geliştirilir?",
+    "excerpt": "Hayal gücü, çocukların yaratıcılığının ve problem çözme yeteneğinin temelidir. Evde uygulayabileceğiniz basit yöntemlerle hayal gücünü destekleyin.",
+    "category": "Yaratıcılık",
+    "date": "3 Mart 2026",
+    "readTime": "6 dk okuma",
+    "emoji": "🦄"
+  },
+  {
+    "id": 4,
+    "title": "Yapay Zeka ile Kişiselleştirilmiş Eğitim",
+    "excerpt": "Yapay zeka teknolojisi, her çocuğun bireysel ihtiyaçlarına göre öğrenme deneyimi sunuyor. Fabu bu teknolojiyi masallarla birleştiriyor.",
+    "category": "Teknoloji",
+    "date": "27 Şubat 2026",
+    "readTime": "5 dk okuma",
+    "emoji": "🤖"
+  },
+  {
+    "id": 5,
+    "title": "Klasik Masalların Çocuklara Öğrettikleri",
+    "excerpt": "Kül Kedisi'nden Pamuk Prenses'e, klasik masallar yüzyıllardır çocuklara değerli hayat dersleri veriyor. Bu masalların gizli mesajlarını keşfedin.",
+    "category": "Klasik Masallar",
+    "date": "20 Şubat 2026",
+    "readTime": "7 dk okuma",
+    "emoji": "👑"
+  },
+  {
+    "id": 6,
+    "title": "Ekran Süresi ve Dijital Hikaye Anlatımı",
+    "excerpt": "Dijital çağda ekran süresini verimli kullanmak mümkün mü? Etkileşimli hikaye anlatımının çocuklar üzerindeki olumlu etkilerini inceliyoruz.",
+    "category": "Dijital Ebeveynlik",
+    "date": "14 Şubat 2026",
+    "readTime": "5 dk okuma",
+    "emoji": "📱"
+  }
+]
