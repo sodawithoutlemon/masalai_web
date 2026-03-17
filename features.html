@@ -8,12 +8,19 @@
   <meta name="keywords" content="masal oluşturucu, yapay zeka masal, fabu özellikleri, ebeveyn kontrolü, çocuk gelişimi, eğitici hikayeler, sesli masallar">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://fabuapp.com/features.html">
+  <link rel="icon" type="image/png" href="images/logo/logo.png">
+  <link rel="apple-touch-icon" href="images/logo/logo.png">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Fabu Özellikleri – Yapay Zeka ile Sihirli Masallar">
   <meta property="og:description" content="Yapay zeka masal oluşturma, kişiselleştirilmiş hikayeler, illüstrasyonlar ve daha fazlası.">
   <meta property="og:url" content="https://fabuapp.com/features.html">
   <meta property="og:locale" content="tr_TR">
+  <meta property="og:image" content="https://fabuapp.com/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fabu Özellikleri – Yapay Zeka ile Sihirli Masallar">
+  <meta name="twitter:description" content="Yapay zeka masal oluşturma, kişiselleştirilmiş hikayeler, illüstrasyonlar ve daha fazlası.">
+  <meta name="twitter:image" content="https://fabuapp.com/images/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,48 +40,99 @@
     }
   </script>
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Fabu Özellikleri",
+    "description": "Fabu'nun yapay zeka masal oluşturma, kişiselleştirilmiş hikayeler ve eğitici araçlar gibi tüm özelliklerini keşfedin.",
+    "url": "https://fabuapp.com/features.html",
+    "isPartOf": { "@type": "WebSite", "name": "Fabu", "url": "https://fabuapp.com" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://fabuapp.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Özellikler", "item": "https://fabuapp.com/features.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Fabu",
+    "url": "https://fabuapp.com",
+    "logo": "https://fabuapp.com/images/logo/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/fabutales/",
+      "https://www.tiktok.com/@fabutales",
+      "https://www.youtube.com/@fabutales",
+      "https://x.com/fabutales2026",
+      "https://www.facebook.com/fabutales/",
+      "https://www.linkedin.com/company/fabutales/"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <canvas id="particles-canvas"></canvas>
+  <a href="#main-content" class="skip-to-content">Ana içeriğe geç</a>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
   <div class="mobile-overlay"></div>
 
   <!-- HEADER -->
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
       <a href="index.html" class="header-logo flex items-center gap-2">
-        <img src="images/logo/fabu.png" alt="Fabu Logo" width="42" height="42">
-        <span class="font-display text-xl font-black text-purple-900 hidden sm:block">Fabu</span>
+        <img src="images/logo/logo.png" alt="Fabu Logo" width="42" height="42">
       </a>
-      <nav class="nav-menu flex items-center gap-8">
-        <a href="index.html" class="nav-link">Ana Sayfa</a>
-        <a href="features.html" class="nav-link active">Özellikler</a>
-        <a href="stories.html" class="nav-link">Masallar</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        <a href="index.html#ebeveynler" class="nav-link">Ebeveynler</a>
-        <a href="index.html#iletisim" class="nav-link">İletişim</a>
+      <nav class="nav-menu flex items-center gap-8" id="nav-menu">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Ana Sayfa</a>
+        <a href="features.html" class="nav-link active" data-i18n="nav_features">Özellikler</a>
+        <a href="stories.html" class="nav-link" data-i18n="nav_stories">Masallar</a>
+        <a href="blog.html" class="nav-link" data-i18n="nav_blog">Blog</a>
+        <a href="#iletisim" class="nav-link" data-i18n="nav_contact">İletişim</a>
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-switcher-btn" id="lang-switcher-btn" aria-label="Dil Seç">
+            <span id="current-lang-flag">🇹🇷</span>
+            <span id="current-lang-name">Türkçe</span>
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown">
+            <button class="lang-option active" data-lang="tr" onclick="setLanguage('tr')">🇹🇷 Türkçe</button>
+            <button class="lang-option" data-lang="en" onclick="setLanguage('en')">🇬🇧 English</button>
+            <button class="lang-option" data-lang="zh" onclick="setLanguage('zh')">🇨🇳 中文</button>
+            <button class="lang-option" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 Français</button>
+            <button class="lang-option" data-lang="hi" onclick="setLanguage('hi')">🇮🇳 हिन्दी</button>
+            <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">🇸🇦 العربية</button>
+            <button class="lang-option" data-lang="es" onclick="setLanguage('es')">🇪🇸 Español</button>
+          </div>
+        </div>
         <a href="index.html#indir" class="btn-primary">
           <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3"/></svg>
-          Uygulamayı İndir
+          <span data-i18n="nav_download">Uygulamayı İndir</span>
         </a>
       </nav>
-      <button class="mobile-menu-btn" aria-label="Menü"><span></span><span></span><span></span></button>
+      <button class="mobile-menu-btn" aria-label="Menü" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
+  <main id="main-content">
   <!-- PAGE HEADER -->
   <section class="page-header">
-    <div class="hero-blob hero-blob-1"></div>
-    <div class="hero-blob hero-blob-2"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <nav class="breadcrumb mb-6">
-        <a href="index.html">Ana Sayfa</a>
+        <a href="index.html" data-i18n="nav_home">Ana Sayfa</a>
         <span>/</span>
-        <span class="text-purple-700 font-semibold">Özellikler</span>
+        <span class="text-purple-700 font-semibold" data-i18n="nav_features">Özellikler</span>
       </nav>
       <h1 class="font-display text-4xl sm:text-5xl font-black text-purple-950 mb-4">
-        Sihirli <span class="gradient-text">Özellikler</span>
+        <span data-i18n="page_features_title">Sihirli</span> <span class="gradient-text" data-i18n="page_features_hl">Özellikler</span>
       </h1>
-      <p class="text-lg text-gray-600 max-w-2xl">Fabu'nun sunduğu tüm özellikleri keşfedin ve çocuğunuzun masal dünyasına adım atın.</p>
+      <p class="text-lg text-gray-600 max-w-2xl" data-i18n="page_features_desc">Fabu'nun sunduğu tüm özellikleri keşfedin ve çocuğunuzun masal dünyasına adım atın.</p>
     </div>
   </section>
 
@@ -82,62 +140,48 @@
   <section class="section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-
-        <!-- Feature Block 1 -->
         <div class="flex gap-6 items-start reveal">
           <div class="feature-icon bg-purple-100 flex-shrink-0">🤖</div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Yapay Zeka Masal Oluşturma</h3>
-            <p class="text-gray-500 leading-relaxed">Gelişmiş dil modelleri ile dakikalar değil, saniyeler içinde yaratıcı ve özgün masallar oluşturun. Her masal, yapay zekanın en iyi hikaye anlatıcılık yetenekleriyle şekillenir.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="feat1_title">Yapay Zeka Masal Oluşturma</h3>
+            <p class="text-gray-500 leading-relaxed" data-i18n="feat1_desc">Gelişmiş yapay zeka teknolojisi ile saniyeler içinde özgün, yaratıcı ve eğitici masallar oluşturun.</p>
           </div>
         </div>
-
-        <!-- Feature Block 2 -->
         <div class="flex gap-6 items-start reveal reveal-delay-1">
           <div class="feature-icon bg-pink-100 flex-shrink-0">👧</div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Kişiselleştirilmiş Hikayeler</h3>
-            <p class="text-gray-500 leading-relaxed">Çocuğunuzun adını, sevdiği renkleri, hayvanları ve ilgi alanlarını girin. Yapay zeka bunları hikayeye örerek tamamen benzersiz bir deneyim sunar.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="feat2_title">Kişiselleştirilmiş Hikayeler</h3>
+            <p class="text-gray-500 leading-relaxed" data-i18n="feat2_desc">Çocuğunuzun adı, ilgi alanları ve tercihleri ile her hikaye tamamen benzersiz ve kişisel olsun.</p>
           </div>
         </div>
-
-        <!-- Feature Block 3 -->
         <div class="flex gap-6 items-start reveal">
           <div class="feature-icon bg-blue-100 flex-shrink-0">🎨</div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Yapay Zeka İllüstrasyonları</h3>
-            <p class="text-gray-500 leading-relaxed">Her masal, özel olarak oluşturulmuş renkli ve büyüleyici illüstrasyonlarla zenginleştirilir. Çocuğunuz sadece okumasın, görsel bir dünyaya dalsın.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="feat3_title">Masal İllüstrasyonları</h3>
+            <p class="text-gray-500 leading-relaxed" data-i18n="feat3_desc">Her masal, yapay zeka ile oluşturulmuş renkli ve büyüleyici illüstrasyonlarla hayat bulur.</p>
           </div>
         </div>
-
-        <!-- Feature Block 4 -->
         <div class="flex gap-6 items-start reveal reveal-delay-1">
           <div class="feature-icon bg-amber-100 flex-shrink-0">📚</div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Klasik Dünya Masalları</h3>
-            <p class="text-gray-500 leading-relaxed">Kül Kedisi, Pamuk Prenses, Pinokyo ve düzinelerce klasik masal, modern bir anlatımla hazırlanmış şekilde kütüphanenizde yer alıyor.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="feat4_title">Klasik Dünya Masalları</h3>
+            <p class="text-gray-500 leading-relaxed" data-i18n="feat4_desc">Kül Kedisi'nden Pamuk Prenses'e, dünyanın en sevilen klasik masalları parmak ucunuzda.</p>
           </div>
         </div>
-
-        <!-- Feature Block 5 -->
         <div class="flex gap-6 items-start reveal">
           <div class="feature-icon bg-green-100 flex-shrink-0">🎓</div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Eğitici Araçlar</h3>
-            <p class="text-gray-500 leading-relaxed">Her masalın sonunda kelime oyunları, sorular ve eğitici aktiviteler bulunur. Çocuğunuz eğlenirken öğrenmeye devam eder.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="feat5_title">Eğitici Araçlar</h3>
+            <p class="text-gray-500 leading-relaxed" data-i18n="feat5_desc">Kelime hazinesini genişleten, ahlaki değerler öğreten ve hayal gücünü geliştiren eğitici içerikler.</p>
           </div>
         </div>
-
-        <!-- Feature Block 6 -->
         <div class="flex gap-6 items-start reveal reveal-delay-1">
           <div class="feature-icon bg-indigo-100 flex-shrink-0">🎧</div>
           <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Sesli Masal Dinleme</h3>
-            <p class="text-gray-500 leading-relaxed">Profesyonel seslendirme ile masalları sesli dinleyebilirsiniz. Uyku öncesi için mükemmel bir ritüel oluşturun.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="feat6_title">Sesli Masal Dinleme</h3>
+            <p class="text-gray-500 leading-relaxed" data-i18n="feat6_desc">Profesyonel seslendirme ile masalları dinleyin. Uyku öncesi için mükemmel bir deneyim.</p>
           </div>
         </div>
-
-        <!-- Feature Block 7 -->
         <div class="flex gap-6 items-start reveal">
           <div class="feature-icon bg-teal-100 flex-shrink-0">🌍</div>
           <div>
@@ -145,8 +189,6 @@
             <p class="text-gray-500 leading-relaxed">Türkçe başta olmak üzere birden fazla dilde masal oluşturabilirsiniz. Çocuğunuzun yabancı dil gelişimine de katkı sağlayın.</p>
           </div>
         </div>
-
-        <!-- Feature Block 8 -->
         <div class="flex gap-6 items-start reveal reveal-delay-1">
           <div class="feature-icon bg-rose-100 flex-shrink-0">🛡️</div>
           <div>
@@ -158,105 +200,101 @@
     </div>
   </section>
 
-  <!-- Screenshots -->
-  <section class="section-padding bg-white">
+  <!-- APP SCREENSHOTS -->
+  <section class="section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 reveal">
-        <h2 class="font-display text-3xl sm:text-4xl font-black text-purple-950 mb-4">Uygulamadan <span class="gradient-text">Kareler</span></h2>
+        <h2 class="font-display text-3xl sm:text-4xl font-black text-purple-950 mb-4">
+          <span data-i18n="ss_title_1">Bir Göz</span> <span class="gradient-text" data-i18n="ss_title_hl">Atın</span>
+        </h2>
       </div>
-      <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory justify-start lg:justify-center">
-        <div class="flex-shrink-0 w-52 snap-center reveal"><img src="images/screenshots/2.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416"></div>
-        <div class="flex-shrink-0 w-52 snap-center reveal reveal-delay-1"><img src="images/screenshots/3.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416"></div>
-        <div class="flex-shrink-0 w-52 snap-center reveal reveal-delay-2"><img src="images/screenshots/4.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416"></div>
-        <div class="flex-shrink-0 w-52 snap-center reveal reveal-delay-3"><img src="images/screenshots/5.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416"></div>
+      <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide justify-start lg:justify-center">
+        <div class="flex-shrink-0 w-52 snap-center reveal">
+          <img data-screenshot src="images/market_screenshots/tr/2.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416">
+        </div>
+        <div class="flex-shrink-0 w-52 snap-center reveal reveal-delay-1">
+          <img data-screenshot src="images/market_screenshots/tr/3.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416">
+        </div>
+        <div class="flex-shrink-0 w-52 snap-center reveal reveal-delay-2">
+          <img data-screenshot src="images/market_screenshots/tr/4.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416">
+        </div>
+        <div class="flex-shrink-0 w-52 snap-center reveal reveal-delay-3">
+          <img data-screenshot src="images/market_screenshots/tr/5.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416">
+        </div>
+        <div class="flex-shrink-0 w-52 snap-center reveal reveal-delay-4">
+          <img data-screenshot src="images/market_screenshots/tr/6.jpg" alt="Fabu Ekran" class="rounded-2xl shadow-lg" loading="lazy" width="208" height="416">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta-section section-padding relative" id="indir">
-    <div class="cta-glow bg-purple-300 top-0 left-1/4"></div>
-    <div class="cta-glow bg-amber-200 bottom-0 right-1/4"></div>
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       <div class="reveal">
-        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-purple-950 mb-6 leading-tight">Tüm Özellikleri Keşfetmeye Hazır mısınız?</h2>
-        <p class="text-lg text-gray-600 mb-10 max-w-xl mx-auto">Fabu'yu hemen indirin ve sihirli masal dünyasına adım atın.</p>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight" data-i18n="cta_title_1">Çocuğunuzun Masal</h2>
+        <p class="text-lg text-purple-200 mb-10 max-w-xl mx-auto leading-relaxed" data-i18n="cta_desc">Her gece yeni bir macera, her hikayede yeni bir ders. Fabu ile çocuğunuzun dünyasını büyülü masallarla doldurun.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#" class="btn-store btn-store-dark">
             <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            <div class="store-text"><span class="store-label">App Store'dan</span><span class="store-name">İndirin</span></div>
+            <div class="store-text"><span class="store-label" data-i18n="store_apple_label">App Store'dan</span><span class="store-name" data-i18n="store_apple_name">İndirin</span></div>
           </a>
           <a href="#" class="btn-store btn-store-purple">
             <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 1.458L16.8 7.791 14.5 10.093 5.864 1.458z"/></svg>
-            <div class="store-text"><span class="store-label">Google Play'den</span><span class="store-name">İndirin</span></div>
+            <div class="store-text"><span class="store-label" data-i18n="store_google_label">Google Play'den</span><span class="store-name" data-i18n="store_google_name">İndirin</span></div>
           </a>
         </div>
       </div>
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
-  <footer class="site-footer pt-16 pb-8" id="iletisim">
+  <footer class="site-footer pt-16 pb-8 border-t border-white/10" id="iletisim">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
-        <!-- Brand -->
         <div class="sm:col-span-2 lg:col-span-1">
           <a href="index.html" class="flex items-center gap-2 mb-4">
-            <img src="images/logo/fabu.png" alt="Fabu Logo" width="36" height="36" class="rounded-lg">
+            <img src="images/logo/logo.png" alt="Fabu Logo" width="36" height="36" class="rounded-lg">
             <span class="font-display text-xl font-black text-white">Fabu</span>
           </a>
-          <p class="text-sm text-gray-400 leading-relaxed mb-6">Yapay zeka destekli kişiselleştirilmiş çocuk masalları uygulaması. Her çocuk kendi hikayesinin kahramanı.</p>
-          <div class="flex gap-3">
-            <a href="https://www.instagram.com/fabutales/" target="_blank" class="footer-social-icon" aria-label="Instagram">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@fabutales" target="_blank" class="footer-social-icon" aria-label="TikTok">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-            </a>
-            <a href="https://www.youtube.com/@fabutales" target="_blank" class="footer-social-icon" aria-label="YouTube">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            </a>
-            <a href="https://x.com/fabutales2026" target="_blank" class="footer-social-icon" aria-label="Twitter">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/fabutales/" target="_blank" class="footer-social-icon" aria-label="Facebook">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/company/fabutales/" target="_blank" class="footer-social-icon" aria-label="LinkedIn">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
+          <p class="text-sm text-gray-400 leading-relaxed" data-i18n="footer_desc">Yapay zeka destekli kişiselleştirilmiş çocuk masalları uygulaması. Her çocuk kendi hikayesinin kahramanı.</p>
         </div>
-
-        <!-- Links -->
         <div>
-          <h4 class="font-bold text-white mb-4">Uygulama</h4>
+          <h4 class="font-bold text-white mb-4" data-i18n="footer_app">Uygulama</h4>
           <ul class="space-y-3">
-            <li><a href="features.html" class="footer-link">Özellikler</a></li>
-            <li><a href="index.html#indir" class="footer-link">İndir</a></li>
-            <li><a href="index.html#sss" class="footer-link">SSS</a></li>
+            <li><a href="features.html" class="footer-link" data-i18n="footer_feat">Özellikler</a></li>
+            <li><a href="stories.html" class="footer-link" data-i18n="nav_stories">Masallar</a></li>
+            <li><a href="index.html#indir" class="footer-link" data-i18n="footer_dl">İndir</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="font-bold text-white mb-4">İletişim</h4>
+          <h4 class="font-bold text-white mb-4" data-i18n="footer_contact">İletişim</h4>
           <ul class="space-y-3">
             <li><a href="mailto:info@fabutales.com" class="footer-link">info@fabutales.com</a></li>
           </ul>
+          <div class="flex gap-3 mt-5">
+            <a href="https://www.instagram.com/fabutales/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://www.tiktok.com/@fabutales" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="TikTok"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+            <a href="https://www.youtube.com/@fabutales" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="https://x.com/fabutales2026" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://www.facebook.com/fabutales/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.linkedin.com/company/fabutales/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          </div>
         </div>
-
         <div>
-          <h4 class="font-bold text-white mb-4">Yasal</h4>
+          <h4 class="font-bold text-white mb-4" data-i18n="footer_legal">Yasal</h4>
           <ul class="space-y-3">
-            <li><a href="#" class="footer-link">Kullanıcı Şartları ve Gizlilik Sözleşmesi</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_terms">Kullanıcı Sözleşmesi</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_privacy">Gizlilik Politikası</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_kvkk">KVKK</a></li>
           </ul>
         </div>
       </div>
-
-      <!-- Bottom Bar -->
       <div class="flex flex-col sm:flex-row items-center justify-between pt-8 gap-4">
-        <p class="text-sm text-gray-500">&copy; 2026 Fabu. Tüm hakları saklıdır.</p>
-        <p class="text-sm text-gray-500">Hassasiyetle tasarlandı. Çocuklar için sevgiyle yapıldı.</p>
+        <p class="text-sm text-gray-500">&copy; 2026 Fabu. <span data-i18n="footer_copy">Tüm hakları saklıdır.</span></p>
+        <p class="text-sm text-gray-500" data-i18n="footer_made">Hassasiyetle tasarlandı. Çocuklar için sevgiyle yapıldı.</p>
       </div>
     </div>
   </footer>
@@ -265,6 +303,7 @@
     <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
   </button>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
 </body>

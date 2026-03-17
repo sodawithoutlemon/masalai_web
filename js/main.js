@@ -28,6 +28,7 @@
     function toggle() {
       const isOpen = menu.classList.toggle('open');
       btn.classList.toggle('active', isOpen);
+      btn.setAttribute('aria-expanded', String(isOpen));
       if (overlay) overlay.classList.toggle('active', isOpen);
       document.body.style.overflow = isOpen ? 'hidden' : '';
     }
@@ -35,6 +36,7 @@
     function close() {
       menu.classList.remove('open');
       btn.classList.remove('active');
+      btn.setAttribute('aria-expanded', 'false');
       if (overlay) overlay.classList.remove('active');
       document.body.style.overflow = '';
     }
@@ -101,6 +103,27 @@
     });
   }
 
+  /* ---------- Scroll Indicator ---------- */
+  function initScrollIndicator() {
+    const indicator = document.querySelector('.scroll-indicator');
+    if (!indicator) return;
+
+    indicator.addEventListener('click', () => {
+      const hero = document.querySelector('.hero-section');
+      if (!hero) return;
+      const next = hero.nextElementSibling;
+      if (next) {
+        const top = next.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      indicator.style.opacity = window.scrollY > 200 ? '0' : '';
+      indicator.style.pointerEvents = window.scrollY > 200 ? 'none' : '';
+    }, { passive: true });
+  }
+
   /* ---------- Back to Top ---------- */
   function initBackToTop() {
     const btn = document.querySelector('.back-to-top');
@@ -150,6 +173,27 @@
     update();
   }
 
+  /* ---------- Language Switcher ---------- */
+  function initLanguageSwitcher() {
+    const btn = document.getElementById('lang-switcher-btn');
+    const dropdown = document.getElementById('lang-dropdown');
+    if (!btn || !dropdown) return;
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('open');
+    });
+
+    // Close dropdown on outside click
+    document.addEventListener('click', () => {
+      dropdown.classList.remove('open');
+    });
+
+    dropdown.addEventListener('click', () => {
+      dropdown.classList.remove('open');
+    });
+  }
+
   /* ---------- Init ---------- */
   function init() {
     initHeader();
@@ -157,8 +201,10 @@
     initActiveNav();
     initSmoothScroll();
     initFAQ();
+    initScrollIndicator();
     initBackToTop();
     initTestimonialSlider();
+    initLanguageSwitcher();
   }
 
   if (document.readyState === 'loading') {

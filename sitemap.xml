@@ -22,6 +22,42 @@
     <loc>https://fabuapp.com/blog.html</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fabuapp.com/blog/masal-okumanin-cocuk-gelisimine-faydalari.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fabuapp.com/blog/uyku-oncesi-hikaye-okumanin-onemi.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fabuapp.com/blog/cocuklarin-hayal-gucu-nasil-gelistirilir.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fabuapp.com/blog/yapay-zeka-ile-kisisellestirilmis-cocuk-masallari.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fabuapp.com/blog/cocuklarda-ekran-suresi-yonetimi.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fabuapp.com/blog/masallarla-cok-dilli-cocuk-yetistirmek.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
