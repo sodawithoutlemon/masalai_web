@@ -12,7 +12,7 @@
       if (!this.canvas) return;
       this.ctx = this.canvas.getContext('2d');
       this.particles = [];
-      this.maxParticles = window.innerWidth < 768 ? 35 : 65;
+      this.maxParticles = window.innerWidth < 768 ? 25 : 50;
       this.resize();
       window.addEventListener('resize', () => this.resize());
       this.init();
@@ -36,35 +36,35 @@
         'rgba(251, 191, 36, A)',
         'rgba(253, 224, 71, A)',
         'rgba(255, 255, 255, A)',
-        'rgba(251, 191, 36, A)',
-        'rgba(255, 255, 255, A)',
-        'rgba(253, 224, 71, A)',
         'rgba(168, 85, 247, A)',
         'rgba(244, 114, 182, A)'
       ];
       return {
         x: Math.random() * (this.canvas ? this.canvas.width : window.innerWidth),
         y: Math.random() * (this.canvas ? this.canvas.height : window.innerHeight),
-        size: Math.random() * 4 + 2,
-        speedX: (Math.random() - 0.5) * 0.25,
-        speedY: (Math.random() - 0.5) * 0.15 - 0.1,
+        size: Math.random() * 3 + 3,
+        speedX: (Math.random() - 0.5) * 0.2,
+        speedY: (Math.random() - 0.5) * 0.12 - 0.06,
         color: colors[Math.floor(Math.random() * colors.length)],
-        alpha: Math.random() * 0.35 + 0.15,
-        alphaSpeed: Math.random() * 0.006 + 0.003,
+        alpha: Math.random() * 0.5 + 0.3,
+        alphaSpeed: Math.random() * 0.008 + 0.004,
         alphaDir: 1,
         rotation: Math.random() * Math.PI * 2,
-        rotationSpeed: (Math.random() - 0.5) * 0.015
+        rotationSpeed: (Math.random() - 0.5) * 0.02
       };
     }
 
-    drawStar(x, y, size, rotation, color) {
+    drawStar(x, y, size, rotation, color, alpha) {
       this.ctx.save();
       this.ctx.translate(x, y);
       this.ctx.rotate(rotation);
 
+      this.ctx.shadowColor = color;
+      this.ctx.shadowBlur = size * 5;
+
       const spikes = 4;
       const outerR = size;
-      const innerR = size * 0.4;
+      const innerR = size * 0.35;
       this.ctx.beginPath();
       for (let i = 0; i < spikes * 2; i++) {
         const r = i % 2 === 0 ? outerR : innerR;
@@ -78,9 +78,10 @@
       this.ctx.fillStyle = color;
       this.ctx.fill();
 
+      this.ctx.shadowBlur = size * 10;
       this.ctx.beginPath();
-      this.ctx.arc(0, 0, size * 0.25, 0, Math.PI * 2);
-      this.ctx.fillStyle = color;
+      this.ctx.arc(0, 0, size * 0.4, 0, Math.PI * 2);
+      this.ctx.fillStyle = 'rgba(255, 255, 255, ' + (alpha * 0.7).toFixed(2) + ')';
       this.ctx.fill();
 
       this.ctx.restore();
@@ -94,8 +95,8 @@
         p.rotation += p.rotationSpeed;
 
         p.alpha += p.alphaSpeed * p.alphaDir;
-        if (p.alpha >= 0.55) p.alphaDir = -1;
-        if (p.alpha <= 0.08) p.alphaDir = 1;
+        if (p.alpha >= 0.65) p.alphaDir = -1;
+        if (p.alpha <= 0.05) p.alphaDir = 1;
 
         if (p.y < -20) p.y = this.canvas.height + 20;
         if (p.y > this.canvas.height + 20) p.y = -20;
@@ -109,7 +110,7 @@
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
       this.particles.forEach(p => {
         const col = p.color.replace('A', p.alpha.toFixed(2));
-        this.drawStar(p.x, p.y, p.size * 3, p.rotation, col);
+        this.drawStar(p.x, p.y, p.size, p.rotation, col, p.alpha);
       });
     }
 

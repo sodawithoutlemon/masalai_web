@@ -55,9 +55,10 @@ body {
   color: rgba(255, 255, 255, 0.9);
   background: var(--bg-page);
   background-image:
-    radial-gradient(ellipse 120% 80% at 20% 10%, rgba(124, 58, 237, 0.15) 0%, transparent 60%),
-    radial-gradient(ellipse 100% 60% at 80% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse 80% 60% at 50% 90%, rgba(236, 72, 153, 0.08) 0%, transparent 50%);
+    radial-gradient(ellipse 180% 50% at 30% 5%, rgba(124, 58, 237, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 150% 40% at 75% 35%, rgba(168, 85, 247, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 160% 45% at 25% 65%, rgba(124, 58, 237, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 180% 50% at 70% 90%, rgba(236, 72, 153, 0.06) 0%, transparent 70%);
   background-attachment: fixed;
   overflow-x: hidden;
   line-height: 1.7;
@@ -373,56 +374,7 @@ a {
   display: flex;
   align-items: center;
   background: transparent;
-  overflow: hidden;
   padding-top: 5rem;
-}
-
-.hero-bg-decoration {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.hero-blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.2;
-}
-
-.hero-blob-1 {
-  width: 500px;
-  height: 500px;
-  background: var(--purple-main);
-  top: -10%;
-  right: -10%;
-  animation: blobFloat 12s ease-in-out infinite;
-}
-
-.hero-blob-2 {
-  width: 400px;
-  height: 400px;
-  background: var(--pink-soft);
-  bottom: -15%;
-  left: -5%;
-  animation: blobFloat 15s ease-in-out infinite reverse;
-}
-
-.hero-blob-3 {
-  width: 300px;
-  height: 300px;
-  background: var(--yellow-warm);
-  top: 40%;
-  left: 30%;
-  animation: blobFloat 18s ease-in-out infinite 3s;
-}
-
-@keyframes blobFloat {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(30px, -30px) scale(1.05); }
-  50% { transform: translate(-20px, 20px) scale(0.95); }
-  75% { transform: translate(20px, 10px) scale(1.02); }
 }
 
 .hero-phone-mockup {
@@ -463,9 +415,7 @@ a {
 
 /* ---------- Social Proof Bar ---------- */
 .social-proof-bar {
-  background: rgba(255, 255, 255, 0.04);
-  border-top: 1px solid rgba(255,255,255,0.06);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: transparent;
 }
 
 .proof-item {
@@ -691,36 +641,31 @@ a {
 /* ---------- CTA / Download Section ---------- */
 .cta-section {
   position: relative;
-  background: rgba(124, 58, 237, 0.08);
+  background: transparent;
   overflow: hidden;
 }
 
-.cta-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(3px 3px at 10% 20%, rgba(251,191,36,0.8) 0%, transparent 100%),
-    radial-gradient(2px 2px at 20% 70%, rgba(255,255,255,0.9) 0%, transparent 100%),
-    radial-gradient(3px 3px at 30% 60%, rgba(251,191,36,0.7) 0%, transparent 100%),
-    radial-gradient(2px 2px at 40% 15%, rgba(255,255,255,0.8) 0%, transparent 100%),
-    radial-gradient(3px 3px at 50% 30%, rgba(251,191,36,0.8) 0%, transparent 100%),
-    radial-gradient(2px 2px at 60% 85%, rgba(255,255,255,0.9) 0%, transparent 100%),
-    radial-gradient(3px 3px at 70% 80%, rgba(251,191,36,0.6) 0%, transparent 100%),
-    radial-gradient(2px 2px at 75% 10%, rgba(255,255,255,0.8) 0%, transparent 100%),
-    radial-gradient(3px 3px at 85% 45%, rgba(251,191,36,0.7) 0%, transparent 100%),
-    radial-gradient(2px 2px at 90% 40%, rgba(255,255,255,0.9) 0%, transparent 100%),
-    radial-gradient(2px 2px at 15% 50%, rgba(251,191,36,0.6) 0%, transparent 100%),
-    radial-gradient(3px 3px at 25% 85%, rgba(255,255,255,0.8) 0%, transparent 100%),
-    radial-gradient(2px 2px at 45% 70%, rgba(251,191,36,0.7) 0%, transparent 100%),
-    radial-gradient(3px 3px at 65% 25%, rgba(255,255,255,0.9) 0%, transparent 100%),
-    radial-gradient(2px 2px at 95% 65%, rgba(251,191,36,0.6) 0%, transparent 100%);
-  animation: twinkle 5s ease-in-out infinite alternate;
+/* ---------- Section Dividers ---------- */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(124, 58, 237, 0.25) 30%, rgba(236, 72, 153, 0.2) 50%, rgba(124, 58, 237, 0.25) 70%, transparent 100%);
+  border: none;
+  margin: 0;
 }
 
-@keyframes twinkle {
-  0% { opacity: 0.5; }
-  100% { opacity: 1; }
+/* ---------- Soft glow accent orbs ---------- */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  opacity: 0.07;
+  animation: orbPulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes orbPulse {
+  0% { opacity: 0.04; transform: scale(0.95); }
+  100% { opacity: 0.1; transform: scale(1.05); }
 }
 
 .cta-glow {
@@ -729,14 +674,13 @@ a {
   height: 500px;
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.12;
+  opacity: 0.08;
 }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: rgba(0, 0, 0, 0.3);
+  background: transparent;
   color: white;
-  border-top: 1px solid rgba(255,255,255,0.06);
 }
 
 .footer-link {
@@ -1097,7 +1041,7 @@ img.loaded {
 .text-blue-800 { color: #93c5fd !important; }
 .text-amber-800 { color: var(--yellow-warm) !important; }
 
-.bg-white { background: rgba(255, 255, 255, 0.06) !important; }
+.bg-white { background: transparent !important; }
 
 .bg-purple-100 { background: rgba(124, 58, 237, 0.2) !important; }
 .bg-pink-100 { background: rgba(236, 72, 153, 0.2) !important; }
