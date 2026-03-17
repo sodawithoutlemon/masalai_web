@@ -422,7 +422,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   z-index: 20;
   cursor: pointer;
   animation: scrollFadeIn 1.5s ease 2s both;
@@ -433,55 +433,35 @@ a {
   to { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
-.scroll-mouse {
-  width: 26px;
-  height: 42px;
-  border: 2px solid rgba(255, 255, 255, 0.35);
-  border-radius: 14px;
-  position: relative;
-}
-
-.scroll-wheel {
-  width: 4px;
-  height: 8px;
-  background: var(--purple-light);
-  border-radius: 4px;
-  position: absolute;
-  top: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: scrollWheelMove 2s ease-in-out infinite;
-}
-
-@keyframes scrollWheelMove {
-  0%   { opacity: 1; top: 6px; }
-  50%  { opacity: 0.5; top: 22px; }
-  100% { opacity: 0; top: 22px; }
-}
-
 .scroll-text {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .scroll-arrows {
-  color: rgba(255, 255, 255, 0.3);
-  height: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  animation: scrollBounce 2s ease-in-out infinite;
 }
 
 .scroll-arrow {
   animation: scrollArrowPulse 2s ease-in-out infinite;
 }
 
-.scroll-arrow-2 { animation-delay: 0.2s; }
-.scroll-arrow-3 { animation-delay: 0.4s; }
+.scroll-arrow-1 { opacity: 0.3; }
+.scroll-arrow-2 { animation-delay: 0.15s; opacity: 0.5; }
+.scroll-arrow-3 { animation-delay: 0.3s; opacity: 0.7; }
 
 @keyframes scrollArrowPulse {
-  0%, 100% { opacity: 0.15; }
-  50%      { opacity: 0.6; }
+  0%, 100% { opacity: 0.2; }
+  50%      { opacity: 0.8; }
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
 }
 
 @media (max-width: 767px) {
