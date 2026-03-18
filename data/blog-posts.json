@@ -106,5 +106,35 @@
     "date": "30 Mart 2026",
     "readTime": "7 dk okuma",
     "emoji": "🐺"
+  },
+  {
+    "id": 13,
+    "title": "Çocukların Korkularını Masallarla Yenmek",
+    "excerpt": "Çocukluk çağındaki karanlık, canavar veya yalnızlık gibi korkularla başa çıkmada masalların terapötik gücünü nasıl kullanabilirsiniz?",
+    "category": "Psikoloji",
+    "date": "18 Mart 2026",
+    "readTime": "6 dk okuma",
+    "emoji": "🦸‍♀️",
+    "url": "blog/cocuklarin-korkularini-masallarla-yenmek.html"
+  },
+  {
+    "id": 14,
+    "title": "Dil Becerilerini Geliştiren Hikaye Teknikleri",
+    "excerpt": "Çocuğunuzun kelime dağarcığını ve kendini ifade etme yeteneğini geliştirmek için hikaye anlatımında kullanabileceğiniz profesyonel teknikler.",
+    "category": "Eğitim",
+    "date": "18 Mart 2026",
+    "readTime": "4 dk okuma",
+    "emoji": "🗣️",
+    "url": "blog/dil-becerilerini-gelistiren-hikaye-teknikleri.html"
+  },
+  {
+    "id": 15,
+    "title": "Yatmadan Önce Okunacak En İyi 5 Masal Türü",
+    "excerpt": "Uyku öncesi rutinleri için yatıştırıcı ve rahatlatıcı etkiye sahip, en çok tercih edilen 5 masal türü ve çocuklara etkileri.",
+    "category": "Ebeveyn Rehberi",
+    "date": "18 Mart 2026",
+    "readTime": "5 dk okuma",
+    "emoji": "😴",
+    "url": "blog/yatmadan-once-okunacak-en-iyi-5-masal-turu.html"
   }
 ]
