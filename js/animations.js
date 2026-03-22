@@ -1,5 +1,5 @@
 /* ============================================
-   Fabu - Magical Animations & Particle Effects
+   Faby - Magical Animations & Particle Effects
    ============================================ */
 
 (function () {

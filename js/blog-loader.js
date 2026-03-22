@@ -1,5 +1,5 @@
 /* ============================================
-   Fabu - Blog & Stories JSON Loader
+   Faby - Blog & Stories JSON Loader
    ============================================ */
 
 (function () {
