@@ -12,6 +12,61 @@ const I18N = {
     ar: { flag: '🇸🇦', name: 'العربية' },
     es: { flag: '🇪🇸', name: 'Español' }
   },
+  appLinks: {
+    ios:     'https://apps.apple.com/tr/app/faby-masal-ve-hikaye-olu%C5%9Ftur/id6757192081?l=tr',
+    android: 'https://play.google.com/store/apps/details?id=com.ay.masalai&hl=tr'
+  },
+  socialLinks: {
+    tr: {
+      instagram: 'https://www.instagram.com/faby_social.tr',
+      facebook:  'https://www.facebook.com/profile.php?id=61560615688209',
+      linkedin:  'https://www.linkedin.com/company/112968787',
+      tiktok:    'https://www.tiktok.com/@faby_social.tr',
+      youtube:   'https://www.youtube.com/channel/UC5kLXi_e6zzyDaD7rsN2dSg'
+    },
+    zh: {
+      instagram: 'https://www.instagram.com/faby_social.tr',
+      facebook:  'https://www.facebook.com/profile.php?id=61560615688209',
+      linkedin:  'https://www.linkedin.com/company/112968787',
+      tiktok:    'https://www.tiktok.com/@faby_social.tr',
+      youtube:   'https://www.youtube.com/channel/UC5kLXi_e6zzyDaD7rsN2dSg'
+    },
+    hi: {
+      instagram: 'https://www.instagram.com/faby.india',
+      facebook:  'https://www.facebook.com/profile.php?id=61588848854562',
+      linkedin:  'https://www.linkedin.com/company/113270029',
+      tiktok:    'https://www.tiktok.com/@fabuadmin',
+      youtube:   'https://www.youtube.com/channel/UCk_NuKSTIWzM1VSd8iy-3Kw'
+    },
+    fr: {
+      instagram: 'https://www.instagram.com/faby_fr.social',
+      facebook:  'https://www.facebook.com/profile.php?id=61589097620258',
+      linkedin:  'https://www.linkedin.com/company/113208192',
+      tiktok:    'https://www.tiktok.com/@faby_fr.social',
+      youtube:   'https://www.youtube.com/channel/UCB7M7VzmVblpoewq3wg0czQ'
+    },
+    es: {
+      instagram: 'https://www.instagram.com/fabyfunesp',
+      facebook:  'https://www.facebook.com/profile.php?id=61589048255725',
+      linkedin:  'https://www.linkedin.com/company/120994145',
+      tiktok:    'https://www.tiktok.com/@fabyesp_social',
+      youtube:   'https://www.youtube.com/channel/UC26ZFpzTPub3dL18WW8uhJg'
+    },
+    en: {
+      instagram: 'https://www.instagram.com/faby_en.social',
+      facebook:  'https://www.facebook.com/profile.php?id=61588815383386',
+      linkedin:  'https://www.linkedin.com/company/113209181',
+      tiktok:    'https://www.tiktok.com/@faby_en',
+      youtube:   'https://www.youtube.com/channel/UCEytRs5pM2CmWju0GJZbmyg'
+    },
+    ar: {
+      instagram: 'https://www.instagram.com/faby_arabia',
+      facebook:  'https://www.facebook.com/profile.php?id=61588914791555',
+      linkedin:  'https://www.linkedin.com/company/115974004',
+      tiktok:    'https://www.tiktok.com/@fabyarabia',
+      youtube:   'https://www.youtube.com/channel/UCiS1i8kc-a3243VuwwQDLgw'
+    }
+  },
   screenshotMap: {
     tr: ['tr/2.jpg','tr/3.jpg','tr/4.jpg','tr/5.jpg','tr/6.jpg'],
     en: ['en/8.jpg','en/9.jpg','en/10.jpg','en/11.jpg','en/12.jpg'],
@@ -164,6 +219,8 @@ const I18N = {
     footer_terms:  { tr:'Kullanıcı Sözleşmesi', en:'Terms of Service', zh:'服务条款', fr:'Conditions d\'utilisation', hi:'सेवा की शर्तें', ar:'شروط الخدمة', es:'Términos de servicio' },
     footer_privacy:{ tr:'Gizlilik Politikası', en:'Privacy Policy', zh:'隐私政策', fr:'Politique de confidentialité', hi:'गोपनीयता नीति', ar:'سياسة الخصوصية', es:'Política de privacidad' },
     footer_kvkk:   { tr:'KVKK', en:'Data Protection', zh:'数据保护', fr:'Protection des données', hi:'डेटा संरक्षण', ar:'حماية البيانات', es:'Protección de datos' },
+    footer_eula:   { tr:'Son Kullanıcı Lisans Sözleşmesi', en:'EULA', zh:'最终用户许可协议', fr:'CLUF', hi:'EULA', ar:'اتفاقية المستخدم النهائي', es:'EULA' },
+    back_to_blog:  { tr:'← Tüm Blog Yazıları', en:'← All Blog Posts', zh:'← 所有博客文章', fr:'← Tous les articles', hi:'← सभी ब्लॉग पोस्ट', ar:'← جميع المقالات', es:'← Todos los artículos' },
     footer_copy:   { tr:'Tüm hakları saklıdır.', en:'All rights reserved.', zh:'版权所有。', fr:'Tous droits réservés.', hi:'सर्वाधिकार सुरक्षित।', ar:'جميع الحقوق محفوظة.', es:'Todos los derechos reservados.' },
     footer_made:   { tr:'Hassasiyetle tasarlandı. Çocuklar için sevgiyle yapıldı.', en:'Designed with care. Made with love for children.', zh:'用心设计，为孩子们充满爱地制作。', fr:'Conçu avec soin. Fait avec amour pour les enfants.', hi:'देखभाल से डिज़ाइन। बच्चों के लिए प्यार से बना।', ar:'صُمم بعناية. صُنع بحب للأطفال.', es:'Diseñado con cuidado. Hecho con amor para los niños.' },
     // -- Scroll hint --
@@ -219,6 +276,18 @@ const I18N = {
     blog4_content: { tr:'Yapay zeka destekli masal oluşturma teknolojisi, geleneksel hikaye anlatıcılığını tamamen dönüştürüyor. Çocuğunuzun adını, sevdiği hayvanları, favori renklerini ve yaş grubuna uygun temalar belirleyerek saniyeler içinde özgün bir masal oluşturabilirsiniz. Bu kişiselleştirme sayesinde çocuklar hikayeye çok daha güçlü bağ kuruyor. Araştırmalar, kendi adlarının geçtiği hikayeleri dinleyen çocukların dikkat süresinin %40 arttığını gösteriyor. AI masalları ayrıca eğitici mesajlar, ahlaki değerler ve problem çözme senaryoları içerecek şekilde tasarlanabiliyor. Faby uygulaması bu teknolojiyi kullanarak her çocuğa özel, güvenli ve yaşa uygun içerikler sunuyor.', en:'AI-powered story creation technology is transforming traditional storytelling. You can generate a unique fairy tale in seconds by specifying your child\'s name, favorite animals, colors, and age-appropriate themes. This personalization helps children form much stronger connections with the story. Research shows that children who hear stories featuring their own names have a 40% longer attention span. AI stories can also be designed to include educational messages, moral values, and problem-solving scenarios. Faby uses this technology to deliver safe, age-appropriate, and personalized content for every child.', zh:'AI驱动的故事创作技术正在改变传统讲故事的方式。您可以通过指定孩子的姓名、喜爱的动物、颜色和适龄主题，在几秒钟内生成独特的童话故事。研究表明，听到包含自己名字的故事的孩子注意力持续时间增加40%。', fr:'La technologie de création d\'histoires par IA transforme la narration traditionnelle. Vous pouvez créer un conte unique en quelques secondes. Les recherches montrent que les enfants dont le nom apparaît dans l\'histoire ont une durée d\'attention 40% plus longue. Les contes IA peuvent inclure des messages éducatifs et des valeurs morales.', hi:'AI कहानी निर्माण तकनीक पारंपरिक कहानी कहने को बदल रही है। आप सेकंडों में अपने बच्चे के नाम और रुचियों के अनुसार अनूठी कहानियां बना सकते हैं। शोध से पता चलता है कि अपने नाम वाली कहानियां सुनने वाले बच्चों का ध्यान 40% अधिक रहता है।', ar:'تقنية إنشاء القصص بالذكاء الاصطناعي تحول رواية القصص التقليدية. يمكنك إنشاء حكاية فريدة في ثوانٍ. تظهر الأبحاث أن الأطفال الذين يسمعون قصصاً تحمل أسماءهم يزداد تركيزهم بنسبة 40%.', es:'La tecnología de creación de cuentos con IA está transformando la narración tradicional. Puede generar un cuento único en segundos con el nombre de su hijo. Las investigaciones muestran que los niños que escuchan historias con sus nombres tienen un 40% más de atención.' },
     blog5_content: { tr:'Dünya Sağlık Örgütü, 2-5 yaş arası çocuklar için günlük ekran süresinin 1 saati geçmemesini öneriyor. Ancak önemli olan süre kadar içeriğin kalitesidir. Eğitici masal uygulamaları, pasif video izleme yerine aktif katılım sağlayarak ekran süresini verimli hale getirir. Çocuğunuzla birlikte hikaye seçmek, karakterleri tartışmak ve masaldan çıkarılan dersleri konuşmak etkileşimli bir deneyim yaratır. Uzmanlar, ebeveyn eşliğinde kullanılan eğitici uygulamaların dil gelişimini desteklediğini ve okul öncesi hazırlığa katkıda bulunduğunu belirtiyor. Ekran öncesi ve sonrası rutinler belirlemek, sağlıklı dijital alışkanlıkların temelini atar.', en:'The WHO recommends that children aged 2-5 should not exceed 1 hour of daily screen time. However, content quality matters as much as duration. Educational story apps replace passive video watching with active engagement. Choosing stories together with your child, discussing characters, and talking about lessons creates an interactive experience. Experts confirm that educational apps used with parental guidance support language development and preschool readiness. Establishing pre- and post-screen routines lays the foundation for healthy digital habits.', zh:'世卫组织建议2-5岁儿童每天屏幕时间不超过1小时。然而，内容质量与时长同样重要。教育故事应用通过主动参与取代被动观看视频。专家确认，在家长指导下使用的教育应用支持语言发展。', fr:'L\'OMS recommande moins d\'1 heure d\'écran par jour pour les 2-5 ans. La qualité du contenu compte autant que la durée. Les applications éducatives remplacent le visionnage passif par un engagement actif. Les experts confirment que les applications éducatives sous supervision parentale soutiennent le développement linguistique.', hi:'WHO 2-5 साल के बच्चों के लिए प्रतिदिन 1 घंटे से अधिक स्क्रीन टाइम की सिफारिश नहीं करता। हालांकि, सामग्री की गुणवत्ता भी उतनी ही महत्वपूर्ण है। शैक्षिक कहानी ऐप्स निष्क्रिय देखने की जगह सक्रिय भागीदारी प्रदान करते हैं।', ar:'توصي منظمة الصحة العالمية بألا يتجاوز وقت الشاشة ساعة واحدة يومياً للأطفال 2-5 سنوات. جودة المحتوى مهمة بقدر المدة. تطبيقات القصص التعليمية توفر مشاركة نشطة بدلاً من المشاهدة السلبية.', es:'La OMS recomienda no más de 1 hora diaria de pantalla para niños de 2-5 años. Sin embargo, la calidad del contenido importa tanto como la duración. Las apps educativas de cuentos reemplazan la visualización pasiva con participación activa. Los expertos confirman que las apps educativas con guía parental apoyan el desarrollo del lenguaje.' },
     blog6_content: { tr:'Nörobilim araştırmaları, 0-7 yaş aralığının dil öğrenimi için kritik dönem olduğunu ortaya koyuyor. Bu dönemde birden fazla dile maruz kalan çocukların beyinlerinde daha güçlü sinaptik bağlantılar oluşuyor. Masallar, yeni bir dili doğal bağlamda öğrenmenin en etkili yollarından biri. Tekrar eden cümle kalıpları, şarkılar ve ritimli anlatım, çocukların kelime hazinesini farkında bile olmadan genişletiyor. Aynı masalı farklı dillerde dinlemek, çocuğun diller arası bağlantılar kurmasını sağlıyor. İki dilli büyüyen çocukların bilişsel esneklik, çoklu görev yönetimi ve problem çözme becerilerinde akranlarına göre üstün oldukları bilimsel olarak kanıtlanmıştır.', en:'Neuroscience research reveals that ages 0-7 are a critical period for language learning. Children exposed to multiple languages during this period develop stronger synaptic connections. Stories are one of the most effective ways to learn a new language in a natural context. Repeating sentence patterns, songs, and rhythmic narration expand vocabulary without children even realizing it. Listening to the same story in different languages helps children build cross-linguistic connections. Bilingual children have been scientifically proven to excel in cognitive flexibility, multitasking, and problem-solving compared to their peers.', zh:'神经科学研究表明0-7岁是语言学习的关键期。在此期间接触多种语言的儿童会建立更强的突触连接。故事是在自然语境中学习新语言最有效的方式之一。重复的句型和节奏叙事在不知不觉中扩大了词汇量。双语儿童在认知灵活性方面优于同龄人。', fr:'Les recherches en neurosciences révèlent que 0-7 ans est une période critique pour l\'apprentissage des langues. Les contes sont l\'un des moyens les plus efficaces d\'apprendre une langue en contexte naturel. Les enfants bilingues excellent en flexibilité cognitive et en résolution de problèmes.', hi:'न्यूरोसाइंस शोध बताता है कि 0-7 वर्ष भाषा सीखने की महत्वपूर्ण अवधि है। कहानियां नई भाषा सीखने का सबसे प्रभावी तरीका है। द्विभाषी बच्चे संज्ञानात्मक लचीलेपन में बेहतर होते हैं।', ar:'تكشف أبحاث علم الأعصاب أن سن 0-7 هي فترة حرجة لتعلم اللغة. القصص من أكثر الطرق فعالية لتعلم لغة جديدة. الأطفال ثنائيو اللغة يتفوقون في المرونة المعرفية وحل المشكلات.', es:'La neurociencia revela que las edades de 0-7 años son un período crítico para el aprendizaje de idiomas. Los cuentos son una de las formas más efectivas de aprender un idioma en contexto natural. Los niños bilingües demuestran mayor flexibilidad cognitiva y habilidades de resolución de problemas.' },
+    blog7_tag:     { tr:'Psikoloji', en:'Psychology', zh:'心理学', fr:'Psychologie', hi:'मनोविज्ञान', ar:'علم النفس', es:'Psicología' },
+    blog7_title:   { tr:'Çocukların Korkularını Masallarla Yenmek', en:'Overcoming Children\'s Fears with Stories', zh:'用故事克服孩子的恐惧', fr:'Surmonter les peurs des enfants avec les contes', hi:'कहानियों से बच्चों के डर पर काबू', ar:'التغلب على مخاوف الأطفال بالقصص', es:'Superar los miedos infantiles con cuentos' },
+    blog7_desc:    { tr:'Karanlık, canavar veya yalnızlık korkusuyla başa çıkmada masalların terapötik gücü.', en:'The therapeutic power of stories in dealing with fear of darkness, monsters, or loneliness.', zh:'故事在应对黑暗、怪物或孤独恐惧中的治疗力量。', fr:'Le pouvoir thérapeutique des contes face aux peurs de l\'obscurité ou de la solitude.', hi:'अंधेरे, राक्षस या अकेलेपन के डर से निपटने में कहानियों की चिकित्सीय शक्ति।', ar:'القوة العلاجية للقصص في التعامل مع خوف الظلام والوحوش والوحدة.', es:'El poder terapéutico de los cuentos para afrontar el miedo a la oscuridad o la soledad.' },
+    blog7_content: { tr:'Çocukluk korkuları aslında gelişimlerinin normal bir parçasıdır. Masallar, bu korkuları semboller üzerinden anlatarak çocuğun güvenli bir ortamda kaygılarıyla yüzleşmesini sağlar. Kahramanın zorlukları aşması, çocuğa kendi iç dünyasındaki devlerle mücadele edebileceği güvenini verir. Faby ile kişiselleştirilmiş masallar oluşturarak bu süreci destekleyebilirsiniz.', en:'Childhood fears are actually a normal part of development. Stories help children confront their anxieties in a safe environment through symbolic language. A hero overcoming challenges gives children the confidence to face their own inner giants. You can support this process by creating personalized stories with Faby.', zh:'童年的恐惧其实是发展的正常部分。故事通过象征性语言帮助孩子在安全环境中面对焦虑。英雄克服困难给了孩子面对自己内心巨人的信心。您可以使用Faby创建个性化故事来支持这个过程。', fr:'Les peurs de l\'enfance font partie du développement normal. Les contes aident les enfants à affronter leurs angoisses dans un environnement sûr grâce au langage symbolique. Un héros surmontant des défis donne aux enfants la confiance d\'affronter leurs propres géants intérieurs. Créez des histoires personnalisées avec Faby pour soutenir ce processus.', hi:'बचपन के डर विकास का सामान्य हिस्सा हैं। कहानियां प्रतीकात्मक भाषा के माध्यम से बच्चों को सुरक्षित वातावरण में अपनी चिंताओं का सामना करने में मदद करती हैं। नायक की कठिनाइयों पर विजय बच्चे को अपने भीतर के दिग्गजों से लड़ने का आत्मविश्वास देती है।', ar:'مخاوف الطفولة هي جزء طبيعي من النمو. تساعد القصص الأطفال على مواجهة قلقهم في بيئة آمنة من خلال اللغة الرمزية. تجاوز البطل للتحديات يمنح الأطفال الثقة لمواجهة عمالقتهم الداخلية.', es:'Los miedos infantiles son una parte normal del desarrollo. Los cuentos ayudan a los niños a enfrentar sus ansiedades en un ambiente seguro mediante el lenguaje simbólico. Un héroe superando desafíos da a los niños confianza para enfrentar sus propios gigantes interiores.' },
+    blog8_tag:     { tr:'Eğitim', en:'Education', zh:'教育', fr:'Éducation', hi:'शिक्षा', ar:'تعليم', es:'Educación' },
+    blog8_title:   { tr:'Dil Becerilerini Geliştiren Hikaye Teknikleri', en:'Story Techniques That Develop Language Skills', zh:'发展语言能力的故事技巧', fr:'Techniques narratives pour développer les compétences linguistiques', hi:'भाषा कौशल विकसित करने वाली कहानी तकनीकें', ar:'تقنيات الحكاية لتطوير المهارات اللغوية', es:'Técnicas narrativas para desarrollar habilidades lingüísticas' },
+    blog8_desc:    { tr:'Çocuğunuzun kelime dağarcığını zenginleştirmek için etkili hikaye anlatım teknikleri.', en:'Effective storytelling techniques to enrich your child\'s vocabulary.', zh:'丰富孩子词汇量的有效讲故事技巧。', fr:'Des techniques de narration efficaces pour enrichir le vocabulaire de votre enfant.', hi:'अपने बच्चे की शब्दावली समृद्ध करने के लिए प्रभावी कहानी कहने की तकनीकें।', ar:'تقنيات سرد القصص الفعالة لإثراء مفردات طفلك.', es:'Técnicas efectivas de narración para enriquecer el vocabulario de tu hijo.' },
+    blog8_content: { tr:'Etkileşimli okuma, masal okuma sürecini bir diyaloğa dönüştürür. Okurken sorular sormak, duygu ve karakterleri seslendirmek kelimelerin anlam kazanmasını sağlar. Yeni kelimeleri hikaye bağlamında açıklamak, çocuğun kelime kapasitesini kalıcı olarak artırır. Araştırmalar, bu tekniklerin dil gelişimini tek yönlü okumaya göre %50 daha fazla desteklediğini gösteriyor.', en:'Interactive reading turns story time into a dialogue. Asking questions while reading, giving voice to emotions and characters helps words gain meaning. Explaining new words in story context permanently increases a child\'s vocabulary. Research shows these techniques support language development 50% more than one-way reading.', zh:'互动阅读将故事时间变成对话。边读边提问，给情感和角色发声，帮助词语获得意义。在故事背景中解释新词语永久增加孩子的词汇量。研究表明，这些技巧对语言发展的支持比单向阅读多50%。', fr:'La lecture interactive transforme l\'heure du conte en dialogue. Poser des questions, donner voix aux émotions et personnages aide les mots à prendre sens. Expliquer les nouveaux mots en contexte augmente durablement le vocabulaire. Les recherches montrent que ces techniques soutiennent le développement linguistique 50% plus qu\'une lecture unidirectionnelle.', hi:'इंटरएक्टिव पढ़ना कहानी के समय को संवाद में बदल देता है। पढ़ते समय प्रश्न पूछना, भावनाओं और पात्रों को आवाज देना शब्दों को अर्थ दिलाता है। कहानी संदर्भ में नए शब्दों को समझाना बच्चे की शब्दावली को स्थायी रूप से बढ़ाता है।', ar:'القراءة التفاعلية تحول وقت القصة إلى حوار. طرح الأسئلة أثناء القراءة وإضفاء الأصوات على المشاعر يساعد الكلمات على اكتساب المعنى. شرح الكلمات الجديدة في سياق القصة يزيد مفردات الطفل بشكل دائم.', es:'La lectura interactiva convierte el tiempo de cuentos en diálogo. Hacer preguntas mientras se lee, dar voz a emociones y personajes ayuda a las palabras a ganar significado. Explicar palabras nuevas en contexto aumenta permanentemente el vocabulario del niño.' },
+    blog9_tag:     { tr:'Ebeveyn Rehberi', en:'Parent Guide', zh:'家长指南', fr:'Guide parental', hi:'अभिभावक गाइड', ar:'دليل الأهل', es:'Guía para padres' },
+    blog9_title:   { tr:'Yatmadan Önce Okunacak En İyi 5 Masal Türü', en:'Top 5 Bedtime Story Types to Read', zh:'睡前5种最佳故事类型', fr:'5 types de contes à lire avant de dormir', hi:'सोने से पहले पढ़ने के शीर्ष 5 कहानी प्रकार', ar:'أفضل 5 أنواع قصص لقراءتها قبل النوم', es:'Los 5 mejores tipos de cuentos para leer antes de dormir' },
+    blog9_desc:    { tr:'Huzurlu bir uyku ve kaliteli dinlenme için uzmanlar tarafından önerilen masal türleri.', en:'Story types recommended by experts for peaceful sleep and quality rest.', zh:'专家推荐的有助于平静睡眠和优质休息的故事类型。', fr:'Types de contes recommandés par les experts pour un sommeil paisible et un repos de qualité.', hi:'शांतिपूर्ण नींद के लिए विशेषज्ञों द्वारा अनुशंसित कहानी प्रकार।', ar:'أنواع القصص الموصى بها من الخبراء لنوم هادئ وراحة جيدة.', es:'Tipos de cuentos recomendados por expertos para un sueño tranquilo y descanso de calidad.' },
+    blog9_content: { tr:'Her masal uyku öncesi için uygun değildir. Doğa betimlemeleri, tekerrürlü cümleler ve sakinleştirici yolculuk temaları çocuğun zihnini uykuya hazırlar. Arkadaşlık ve güven odaklı hikayeler çocuğun kaygılarını yatıştırır. Doğru masal seçimi ile uyku vakti, günün en huzurlu anına dönüşür. Faby\'nun uyku odaklı kütüphanesini keşfedin.', en:'Not every story is suitable for bedtime. Nature descriptions, repetitive sentences, and calming journey themes prepare a child\'s mind for sleep. Friendship and trust-focused stories soothe children\'s anxieties. With the right story choice, bedtime becomes the most peaceful moment of the day. Discover Faby\'s sleep-focused library.', zh:'不是每个故事都适合睡前。自然描写、重复句子和平静的旅程主题为孩子的睡眠做好准备。以友谊和信任为主题的故事能安抚孩子的焦虑。选择合适的故事，睡前时光将成为一天中最平静的时刻。探索Faby的睡眠专注图书馆。', fr:'Toutes les histoires ne conviennent pas à l\'heure du coucher. Les descriptions de la nature, les phrases répétitives et les thèmes de voyage apaisants préparent l\'esprit de l\'enfant au sommeil. Les histoires d\'amitié et de confiance apaisent les anxiétés. Avec le bon choix, l\'heure du coucher devient le moment le plus paisible. Découvrez la bibliothèque sommeil de Faby.', hi:'हर कहानी सोने के समय के लिए उपयुक्त नहीं है। प्रकृति वर्णन, दोहराव वाले वाक्य और शांत यात्रा विषय बच्चे के मन को नींद के लिए तैयार करते हैं। मित्रता और विश्वास पर केंद्रित कहानियां बच्चे की चिंताओं को शांत करती हैं।', ar:'ليست كل القصة مناسبة لوقت النوم. وصف الطبيعة والجمل التكرارية وموضوعات الرحلة الهادئة تهيئ عقل الطفل للنوم. القصص المتمحورة حول الصداقة والثقة تهدئ قلق الأطفال. مع اختيار القصة المناسبة، يصبح وقت النوم أهدأ لحظات اليوم.', es:'No todo cuento es apropiado para la hora de dormir. Descripciones de la naturaleza, frases repetitivas y temas de viaje tranquilizantes preparan la mente del niño para el sueño. Las historias de amistad y confianza calman las ansiedades. Con la elección correcta, la hora de dormir se convierte en el momento más tranquilo del día.' },
     feat_app_shots: { tr:'Uygulamadan Kareler', en:'App Screenshots', zh:'应用截图', fr:'Captures d\'écran', hi:'ऐप स्क्रीनशॉट', ar:'لقطات التطبيق', es:'Capturas de pantalla' },
     // -- Read time labels --
     read_min:      { tr:'dk okuma', en:'min read', zh:'分钟阅读', fr:'min de lecture', hi:'मिनट पढ़ें', ar:'دقائق قراءة', es:'min lectura' }
@@ -263,6 +332,21 @@ function setLanguage(lang) {
     heroImg.src = 'images/market_screenshots/' + shots[0];
   }
 
+  // Update social links per language
+  const social = I18N.socialLinks[lang];
+  if (social) {
+    document.querySelectorAll('[data-social]').forEach(el => {
+      const key = el.getAttribute('data-social');
+      if (social[key]) el.href = social[key];
+    });
+  }
+
+  // Update app store links (same for all languages)
+  document.querySelectorAll('[data-store]').forEach(el => {
+    const key = el.getAttribute('data-store');
+    if (I18N.appLinks[key]) el.href = I18N.appLinks[key];
+  });
+
   // Update active language in dropdown
   const currentFlag = document.getElementById('current-lang-flag');
   const currentName = document.getElementById('current-lang-name');
@@ -274,10 +358,20 @@ function setLanguage(lang) {
   });
 }
 
+/* ---------- Detect Browser Language ---------- */
+function detectBrowserLang() {
+  const nav = navigator.languages ? navigator.languages[0] : navigator.language;
+  if (!nav) return 'tr';
+  const code = nav.toLowerCase().split('-')[0];
+  const map = { tr:'tr', en:'en', zh:'zh', fr:'fr', hi:'hi', ar:'ar', es:'es',
+                pt:'es', de:'en', it:'en', ja:'en', ko:'en', ru:'en' };
+  return map[code] && I18N.languages[map[code]] ? map[code] : 'tr';
+}
+
 /* ---------- Init Language ---------- */
 function initI18n() {
   const saved = localStorage.getItem('faby_lang');
-  const lang = saved && I18N.languages[saved] ? saved : 'tr';
+  const lang = saved && I18N.languages[saved] ? saved : detectBrowserLang();
   setLanguage(lang);
 }
 
