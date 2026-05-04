@@ -356,6 +356,26 @@ function setLanguage(lang) {
   document.querySelectorAll('.lang-option').forEach(opt => {
     opt.classList.toggle('active', opt.dataset.lang === lang);
   });
+
+  // Metricool tracker per language
+  const metricoolHashes = {
+    ar: '322e87f3f03f4a864845561cbf94ac15',
+    en: 'a6f9defd3627bf96720f6ae6303b3155',
+    es: '1b06535149c1640202c9a0da456c1d03',
+    fr: '754916bbc964587c3978fe46d9890fc3',
+    hi: 'c36320f5f04b03f428c0475c57284f6e',
+    tr: '11fdb18e2d3ed13fb9d0e12b14bd75ce',
+    zh: '60468576a73577a57645db0b78a74fd'
+  };
+  const hash = metricoolHashes[lang];
+  if (hash) {
+    const existing = document.querySelector('script[data-metricool]');
+    if (existing) existing.remove();
+    const s = document.createElement('script');
+    s.setAttribute('data-metricool', lang);
+    s.textContent = 'function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"' + hash + '"})});';
+    document.head.appendChild(s);
+  }
 }
 
 /* ---------- Detect Browser Language ---------- */
