@@ -126,6 +126,14 @@ const I18N = {
     feat5_desc:    { tr:'Kelime hazinesini genişleten, ahlaki değerler öğreten ve hayal gücünü geliştiren eğitici içerikler.', en:'Educational content that expands vocabulary, teaches values and develops imagination.', zh:'扩大词汇量、教授价值观、发展想象力的教育内容。', fr:'Du contenu éducatif qui enrichit le vocabulaire et développe l\'imagination.', hi:'शब्दावली बढ़ाने, मूल्य सिखाने और कल्पना विकसित करने वाली सामग्री।', ar:'محتوى تعليمي يوسع المفردات ويعلم القيم.', es:'Contenido educativo que amplía vocabulario y desarrolla imaginación.' },
     feat6_title:   { tr:'Sesli Masal Dinleme', en:'Audio Story Listening', zh:'有声故事', fr:'Écoute audio', hi:'ऑडियो कहानी', ar:'استماع صوتي', es:'Audio cuentos' },
     feat6_desc:    { tr:'Profesyonel seslendirme ile masalları dinleyin. Uyku öncesi için mükemmel bir deneyim.', en:'Listen to stories with professional narration. Perfect for bedtime.', zh:'用专业配音听故事。睡前完美体验。', fr:'Écoutez les contes avec une narration professionnelle. Parfait pour le coucher.', hi:'पेशेवर कथन से कहानियाँ सुनें। सोने से पहले के लिए बिल्कुल सही।', ar:'استمع للقصص بسرد احترافي. مثالي لوقت النوم.', es:'Escucha cuentos con narración profesional. Perfecto para dormir.' },
+    feat7_title:   { tr:'Çok Dilli Destek', en:'Multilingual Support', zh:'多语言支持', fr:'Support multilingue', hi:'बहुभाषी समर्थन', ar:'دعم متعدد اللغات', es:'Soporte multilingüe' },
+    feat7_desc:    { tr:'Türkçe başta olmak üzere birden fazla dilde masal oluşturabilirsiniz. Çocuğunuzun yabancı dil gelişimine de katkı sağlayın.', en:'Create stories in multiple languages. Support your child\'s foreign language development.', zh:'用多种语言创作故事。支持孩子的外语发展。', fr:'Créez des histoires en plusieurs langues. Soutenez le développement linguistique de votre enfant.', hi:'कई भाषाओं में कहानियाँ बनाएं। बच्चे के भाषा विकास में सहायता करें।', ar:'أنشئ قصصاً بلغات متعددة. ادعم تطور لغة طفلك.', es:'Crea cuentos en varios idiomas. Apoya el desarrollo lingüístico de tu hijo.' },
+    feat8_title:   { tr:'Ebeveyn Kontrolü', en:'Parental Controls', zh:'家长控制', fr:'Contrôle parental', hi:'माता-पिता नियंत्रण', ar:'رقابة الوالدين', es:'Control parental' },
+    feat8_desc:    { tr:'Tüm içerikler çocuk güvenliği standartlarına uygun şekilde filtrelenir. Ebeveyn kontrol paneli ile her şeyi takip edebilirsiniz.', en:'All content is filtered to child safety standards. Track everything with the parental control panel.', zh:'所有内容均按儿童安全标准过滤。通过家长控制面板跟踪一切。', fr:'Tout le contenu est filtré selon les normes de sécurité. Suivez tout avec le panneau parental.', hi:'सभी सामग्री बाल सुरक्षा मानकों के अनुसार फ़िल्टर की जाती है।', ar:'تتم تصفية جميع المحتويات وفق معايير سلامة الأطفال. تتبع كل شيء من لوحة التحكم.', es:'Todo el contenido se filtra según estándares de seguridad infantil.' },
+    page_title_home:    { tr:'Faby – Yapay Zeka Masal Oluşturucu', en:'Faby – AI Story Creator', zh:'Faby – AI故事创作', fr:'Faby – Créateur de contes IA', hi:'Faby – AI कहानी निर्माता', ar:'Faby – منشئ قصص بالذكاء الاصطناعي', es:'Faby – Creador de cuentos IA' },
+    page_title_features:{ tr:'Özellikler – Faby | Yapay Zeka Masal Oluşturucu', en:'Features – Faby | AI Story Creator', zh:'功能 – Faby', fr:'Fonctionnalités – Faby', hi:'विशेषताएं – Faby', ar:'الميزات – Faby', es:'Características – Faby' },
+    page_title_stories: { tr:'Masallar – Faby | Masal Kütüphanesi', en:'Stories – Faby | Story Library', zh:'故事 – Faby', fr:'Contes – Faby', hi:'कहानियाँ – Faby', ar:'القصص – Faby', es:'Cuentos – Faby' },
+    page_title_blog:    { tr:'Blog – Faby | Ebeveyn Rehberi', en:'Blog – Faby | Parent Guide', zh:'博客 – Faby', fr:'Blog – Faby', hi:'ब्लॉग – Faby', ar:'المدونة – Faby', es:'Blog – Faby' },
     feat_cta:      { tr:'Tüm Özellikleri Keşfet', en:'Explore All Features', zh:'探索所有功能', fr:'Découvrir toutes les fonctionnalités', hi:'सभी सुविधाएँ खोजें', ar:'اكتشف جميع الميزات', es:'Explorar todas las características' },
     // -- Classic tales section --
     tales_badge:   { tr:'Klasik Masallar', en:'Classic Tales', zh:'经典童话', fr:'Contes classiques', hi:'क्लासिक कथाएं', ar:'حكايات كلاسيكية', es:'Cuentos clásicos' },
@@ -308,8 +316,17 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     const t = I18N.translations[key];
-    if (t && t[lang]) el.textContent = t[lang];
+    if (t && t[lang] !== undefined) el.textContent = t[lang];
   });
+
+  // Update page title
+  const path = window.location.pathname;
+  let titleKey = 'page_title_home';
+  if (path.includes('features')) titleKey = 'page_title_features';
+  else if (path.includes('stories')) titleKey = 'page_title_stories';
+  else if (path.includes('blog')) titleKey = 'page_title_blog';
+  const pt = I18N.translations[titleKey];
+  if (pt && pt[lang]) document.title = pt[lang];
 
   // Update book titles
   document.querySelectorAll('[data-book]').forEach(el => {
