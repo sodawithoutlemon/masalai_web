@@ -193,6 +193,8 @@ const I18N = {
     blog_title_1:  { tr:'Faydalı', en:'Useful', zh:'有用的', fr:'Contenu', hi:'उपयोगी', ar:'محتوى', es:'Contenido' },
     blog_title_hl: { tr:'İçerikler', en:'Content', zh:'内容', fr:'Utile', hi:'सामग्री', ar:'مفيد', es:'Útil' },
     blog_cta:      { tr:'Tüm Yazıları Oku', en:'Read All Posts', zh:'阅读所有文章', fr:'Lire tous les articles', hi:'सभी लेख पढ़ें', ar:'اقرأ جميع المقالات', es:'Leer todos los artículos' },
+    blog_read:     { tr:'Yazıyı Oku', en:'Read Article', zh:'阅读文章', fr:'Lire l\'article', hi:'लेख पढ़ें', ar:'اقرأ المقال', es:'Leer artículo' },
+    back_to_blog:  { tr:'← Tüm Blog Yazıları', en:'← All Blog Posts', zh:'← 所有文章', fr:'← Tous les articles', hi:'← सभी लेख', ar:'← جميع المقالات', es:'← Todos los artículos' },
     blog1_tag:     { tr:'Çocuk Gelişimi', en:'Child Development', zh:'儿童发展', fr:'Développement de l\'enfant', hi:'बाल विकास', ar:'نمو الطفل', es:'Desarrollo infantil' },
     blog1_title:   { tr:'Masal Okumanın Çocuk Gelişimine Faydaları', en:'Benefits of Reading Fairy Tales for Child Development', zh:'阅读童话对儿童发展的好处', fr:'Les bienfaits de la lecture de contes', hi:'परी कथाओं से बाल विकास के लाभ', ar:'فوائد قراءة القصص لنمو الطفل', es:'Beneficios de leer cuentos para el desarrollo infantil' },
     blog1_desc:    { tr:'Düzenli masal dinleyen çocukların dil gelişimi ve hayal gücü çok daha hızlı gelişiyor.', en:'Children who regularly listen to fairy tales develop language and imagination faster.', zh:'经常听童话的孩子语言和想象力发展更快。', fr:'Les enfants qui écoutent régulièrement des contes développent leur langage plus vite.', hi:'नियमित कहानियाँ सुनने वाले बच्चों का विकास तेज़ होता है।', ar:'الأطفال الذين يستمعون للقصص بانتظام يتطورون أسرع.', es:'Los niños que escuchan cuentos regularmente se desarrollan más rápido.' },
@@ -372,6 +374,11 @@ function setLanguage(lang) {
 
   document.querySelectorAll('.lang-option').forEach(opt => {
     opt.classList.toggle('active', opt.dataset.lang === lang);
+  });
+
+  // Show/hide multilingual content blocks (blog posts)
+  document.querySelectorAll('[data-lang-content]').forEach(el => {
+    el.style.display = el.getAttribute('data-lang-content') === lang ? '' : 'none';
   });
 
   // Metricool tracker per language
