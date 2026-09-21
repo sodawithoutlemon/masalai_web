@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fabylearn.com/sitemap.xml
+Sitemap: https://www.fabyfun.com/sitemap.xml

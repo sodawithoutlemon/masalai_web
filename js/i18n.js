@@ -381,9 +381,6 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-lang-content]').forEach(el => {
     el.style.display = el.getAttribute('data-lang-content') === lang ? '' : 'none';
   });
-
-  // Metricool tracker per language
-
 }
 
 /* ---------- Detect Browser Language ---------- */
