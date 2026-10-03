@@ -94,7 +94,6 @@ const I18N = {
     nav_contact:   { tr:'İletişim', en:'Contact', zh:'联系', fr:'Contact', hi:'संपर्क', ar:'اتصل بنا', es:'Contacto' },
     nav_download:  { tr:'Uygulamayı İndir', en:'Download App', zh:'下载应用', fr:'Télécharger', hi:'ऐप डाउनलोड', ar:'تحميل التطبيق', es:'Descargar App' },
     // -- Hero --
-    hero_badge:    { tr:'50.000+ ebeveyn tarafından tercih ediliyor', en:'Trusted by 50,000+ parents', zh:'50,000+ 家长信赖', fr:'Choisi par 50 000+ parents', hi:'50,000+ अभिभावकों द्वारा पसंद', ar:'موثوق من 50,000+ من الآباء', es:'Elegido por 50.000+ padres' },
     hero_title_1:  { tr:'Çocuğunuzun', en:"Where Your Child Is", zh:'让您的孩子成为', fr:'Où votre enfant est le', hi:'आपका बच्चा जहाँ', ar:'حيث يكون طفلك', es:'Donde su hijo es el' },
     hero_title_hl: { tr:'Kahraman', en:'the Hero', zh:'主人公', fr:'Héros', hi:'नायक है', ar:'البطل', es:'Héroe' },
     hero_title_2:  { tr:'Olduğu Masallar', en:'of Every Tale', zh:'的童话故事', fr:'de chaque conte', hi:'हर कहानी का', ar:'في كل حكاية', es:'de cada cuento' },
@@ -179,16 +178,6 @@ const I18N = {
     ss_title_hl:   { tr:'Atın', en:'Look', zh:'一看', fr:'Coup d\'œil', hi:'डालें', ar:'نظرة', es:'Vistazo' },
     ss_desc:       { tr:"Faby'nun büyüleyici dünyasını keşfedin.", en:"Discover Faby's enchanting world.", zh:'探索Faby的迷人世界。', fr:'Découvrez le monde enchanteur de Faby.', hi:'Faby की मनमोहक दुनिया खोजें।', ar:'اكتشف عالم Faby الساحر.', es:'Descubre el mundo encantador de Faby.' },
     // -- FAQ --
-    faq_badge:     { tr:'SSS', en:'FAQ', zh:'常见问题', fr:'FAQ', hi:'सामान्य प्रश्न', ar:'الأسئلة الشائعة', es:'FAQ' },
-    faq_title:     { tr:'Sıkça Sorulan Sorular', en:'Frequently Asked Questions', zh:'常见问题', fr:'Questions fréquentes', hi:'अक्सर पूछे जाने वाले प्रश्न', ar:'الأسئلة الشائعة', es:'Preguntas frecuentes' },
-    faq1_q:        { tr:'Faby uygulaması ücretsiz mi?', en:'Is Faby free?', zh:'Faby免费吗？', fr:'Faby est-il gratuit ?', hi:'क्या Faby मुफ़्त है?', ar:'هل Faby مجاني؟', es:'¿Es Faby gratis?' },
-    faq1_a:        { tr:'Evet, Faby\'yu ücretsiz indirebilir ve temel özellikleri kullanabilirsiniz. Sınırsız masal oluşturma ve premium özellikler için uygun fiyatlı abonelik seçenekleri mevcuttur.', en:'Yes, you can download Faby for free and use basic features. Affordable subscription options are available for unlimited story creation and premium features.', zh:'是的，您可以免费下载Faby并使用基本功能。无限创作和高级功能可选择实惠的订阅。', fr:'Oui, vous pouvez télécharger Faby gratuitement. Des abonnements abordables sont disponibles pour les fonctionnalités premium.', hi:'हाँ, Faby मुफ़्त में डाउनलोड कर सकते हैं। प्रीमियम सुविधाओं के लिए सदस्यता उपलब्ध है।', ar:'نعم، يمكنك تحميل Faby مجانًا. اشتراكات بأسعار معقولة للميزات المميزة.', es:'Sí, puede descargar Faby gratis. Hay suscripciones asequibles para funciones premium.' },
-    faq2_q:        { tr:'Hangi yaş grubuna uygun?', en:'What age group is it for?', zh:'适合什么年龄段？', fr:'Pour quel groupe d\'âge ?', hi:'किस आयु वर्ग के लिए है?', ar:'لأي فئة عمرية؟', es:'¿Para qué grupo de edad?' },
-    faq2_a:        { tr:'Faby, 2-12 yaş arası çocuklar için tasarlanmıştır. Yapay zeka, çocuğunuzun yaşına uygun dil ve içerik seviyesini otomatik olarak ayarlar.', en:'Faby is designed for children aged 2-12. AI automatically adjusts language and content level for your child\'s age.', zh:'Faby专为2-12岁儿童设计。AI自动调整适合孩子年龄的语言和内容。', fr:'Faby est conçu pour les enfants de 2 à 12 ans. L\'IA ajuste automatiquement le niveau.', hi:'Faby 2-12 साल के बच्चों के लिए है। AI स्वचालित रूप से स्तर समायोजित करता है।', ar:'Faby مصمم للأطفال من 2 إلى 12 عامًا. يضبط الذكاء الاصطناعي المستوى تلقائيًا.', es:'Faby es para niños de 2 a 12 años. La IA ajusta automáticamente el nivel.' },
-    faq3_q:        { tr:'Masallar nasıl kişiselleştiriliyor?', en:'How are stories personalized?', zh:'故事如何个性化？', fr:'Comment les contes sont-ils personnalisés ?', hi:'कहानियाँ कैसे व्यक्तिगत होती हैं?', ar:'كيف يتم تخصيص القصص؟', es:'¿Cómo se personalizan los cuentos?' },
-    faq3_a:        { tr:'Çocuğunuzun adını, yaşını, ilgi alanlarını ve istediğiniz temayı girerek tamamen benzersiz masallar oluşturabilirsiniz.', en:'Enter your child\'s name, age, interests and desired theme to create completely unique stories.', zh:'输入孩子的名字、年龄、兴趣和主题来创建完全独特的故事。', fr:'Entrez le nom, l\'âge, les intérêts de votre enfant pour créer des contes uniques.', hi:'बच्चे का नाम, उम्र, रुचियां दर्ज करें और अनूठी कहानियां बनाएं।', ar:'أدخل اسم طفلك وعمره واهتماماته لإنشاء قصص فريدة.', es:'Ingrese el nombre, edad e intereses de su hijo para crear cuentos únicos.' },
-    faq4_q:        { tr:'İçerikler güvenli mi?', en:'Is the content safe?', zh:'内容安全吗？', fr:'Le contenu est-il sûr ?', hi:'क्या सामग्री सुरक्षित है?', ar:'هل المحتوى آمن؟', es:'¿Es seguro el contenido?' },
-    faq4_a:        { tr:'Kesinlikle. Tüm içerikler çocuk güvenliği uzmanları tarafından denetlenmektedir. Yapay zeka filtreleri ile uygunsuz içerik oluşturulması engellenir.', en:'Absolutely. All content is supervised by child safety experts. AI filters prevent inappropriate content.', zh:'绝对安全。所有内容由儿童安全专家监督。AI过滤器防止不当内容。', fr:'Absolument. Tout le contenu est supervisé par des experts en sécurité des enfants.', hi:'बिल्कुल। सारी सामग्री बाल सुरक्षा विशेषज्ञों द्वारा जांची जाती है।', ar:'بالتأكيد. جميع المحتويات تحت إشراف خبراء سلامة الأطفال.', es:'Absolutamente. Todo el contenido es supervisado por expertos en seguridad infantil.' },
     // -- Blog preview --
     blog_title_1:  { tr:'Faydalı', en:'Useful', zh:'有用的', fr:'Contenu', hi:'उपयोगी', ar:'محتوى', es:'Contenido' },
     blog_title_hl: { tr:'İçerikler', en:'Content', zh:'内容', fr:'Utile', hi:'सामग्री', ar:'مفيد', es:'Útil' },
@@ -224,12 +213,13 @@ const I18N = {
     footer_app:    { tr:'Uygulama', en:'App', zh:'应用', fr:'Application', hi:'ऐप', ar:'التطبيق', es:'App' },
     footer_feat:   { tr:'Özellikler', en:'Features', zh:'功能', fr:'Fonctionnalités', hi:'विशेषताएं', ar:'المميزات', es:'Características' },
     footer_dl:     { tr:'İndir', en:'Download', zh:'下载', fr:'Télécharger', hi:'डाउनलोड', ar:'تحميل', es:'Descargar' },
-    footer_faq:    { tr:'SSS', en:'FAQ', zh:'常见问题', fr:'FAQ', hi:'सामान्य प्रश्न', ar:'الأسئلة الشائعة', es:'FAQ' },
     footer_contact:{ tr:'İletişim', en:'Contact', zh:'联系', fr:'Contact', hi:'संपर्क', ar:'اتصل بنا', es:'Contacto' },
     footer_legal:  { tr:'Yasal', en:'Legal', zh:'法律', fr:'Légal', hi:'कानूनी', ar:'قانوني', es:'Legal' },
     footer_terms:  { tr:'Kullanıcı Sözleşmesi', en:'Terms of Service', zh:'服务条款', fr:'Conditions d\'utilisation', hi:'सेवा की शर्तें', ar:'شروط الخدمة', es:'Términos de servicio' },
     footer_privacy:{ tr:'Gizlilik Politikası', en:'Privacy Policy', zh:'隐私政策', fr:'Politique de confidentialité', hi:'गोपनीयता नीति', ar:'سياسة الخصوصية', es:'Política de privacidad' },
-    footer_kvkk:   { tr:'KVKK', en:'Data Protection', zh:'数据保护', fr:'Protection des données', hi:'डेटा संरक्षण', ar:'حماية البيانات', es:'Protección de datos' },
+    footer_kvkk:   { tr:'KVKK Aydınlatma Metni', en:'KVKK Notice (Turkish)', zh:'KVKK 告知（土耳其语）', fr:'Avis KVKK (turc)', hi:'KVKK सूचना (तुर्की)', ar:'إشعار KVKK (بالتركية)', es:'Aviso KVKK (turco)' },
+    footer_delete: { tr:'Hesap Silme', en:'Delete Account', zh:'删除账户', fr:'Supprimer le compte', hi:'खाता हटाएं', ar:'حذف الحساب', es:'Eliminar cuenta' },
+    footer_child_safety: { tr:'Çocuk Güvenliği', en:'Child Safety', zh:'儿童安全', fr:'Sécurité des enfants', hi:'बाल सुरक्षा', ar:'سلامة الأطفال', es:'Seguridad infantil' },
     footer_eula:   { tr:'Son Kullanıcı Lisans Sözleşmesi', en:'EULA', zh:'最终用户许可协议', fr:'CLUF', hi:'EULA', ar:'اتفاقية المستخدم النهائي', es:'EULA' },
     back_to_blog:  { tr:'← Tüm Blog Yazıları', en:'← All Blog Posts', zh:'← 所有博客文章', fr:'← Tous les articles', hi:'← सभी ब्लॉग पोस्ट', ar:'← جميع المقالات', es:'← Todos los artículos' },
     footer_copy:   { tr:'Tüm hakları saklıdır.', en:'All rights reserved.', zh:'版权所有。', fr:'Tous droits réservés.', hi:'सर्वाधिकार सुरक्षित।', ar:'جميع الحقوق محفوظة.', es:'Todos los derechos reservados.' },
@@ -306,14 +296,60 @@ const I18N = {
 };
 
 /* ---------- Language Switching ---------- */
-function setLanguage(lang) {
-  if (!I18N.languages[lang]) return;
-  I18N.currentLang = lang;
-  localStorage.setItem('faby_lang', lang);
+/* ---------- Fixed-language pages (legal texts) ----------
+   Pages whose body is written in one language declare it with
+   <html data-page-lang="xx">. On such pages the document lang/dir and
+   title stay fixed, and picking another language in the switcher opens the
+   matching translated page (from <link rel="alternate" hreflang>) if any. */
+function getPageLang() {
+  const v = document.documentElement.getAttribute('data-page-lang');
+  return v && I18N.languages[v] ? v : null;
+}
 
-  // Set dir for RTL
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-  document.documentElement.lang = lang;
+function findAlternateHref(lang) {
+  const link = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
+  if (!link) return null;
+  try {
+    const url = new URL(link.getAttribute('href'), window.location.href);
+    const host = window.location.hostname;
+    // Stay on the current origin (www/apex, local preview); site paths are root-relative.
+    if (window.location.protocol !== 'file:' && host && url.hostname !== host) {
+      return window.location.origin + url.pathname;
+    }
+    return url.href;
+  } catch (e) {
+    return null;
+  }
+}
+
+function setLanguage(lang, opts) {
+  if (!I18N.languages[lang]) return;
+  opts = opts || {};
+  const pageLang = getPageLang();
+  if (pageLang && !opts.init && lang !== pageLang) {
+    let alt = findAlternateHref(lang);
+    if (!alt) {
+      // No translation in that language: fall back to the x-default version (unless it is this page).
+      const xd = findAlternateHref('x-default');
+      try {
+        if (xd && new URL(xd, window.location.href).pathname !== window.location.pathname) alt = xd;
+      } catch (e) {}
+    }
+    if (alt) {
+      try { localStorage.setItem('faby_lang', lang); } catch (e) {}
+      window.location.href = alt;
+      return;
+    }
+  }
+  I18N.currentLang = lang;
+  if (!(pageLang && opts.init)) {
+    try { localStorage.setItem('faby_lang', lang); } catch (e) {}
+  }
+
+  // Set dir for RTL (fixed-language pages keep their own lang/dir)
+  const docLang = pageLang || lang;
+  document.documentElement.dir = docLang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.lang = docLang;
 
   // Update all data-i18n text elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -322,14 +358,16 @@ function setLanguage(lang) {
     if (t && t[lang] !== undefined) el.textContent = t[lang];
   });
 
-  // Update page title
-  const path = window.location.pathname;
-  let titleKey = 'page_title_home';
-  if (path.includes('features')) titleKey = 'page_title_features';
-  else if (path.includes('stories')) titleKey = 'page_title_stories';
-  else if (path.includes('blog')) titleKey = 'page_title_blog';
-  const pt = I18N.translations[titleKey];
-  if (pt && pt[lang]) document.title = pt[lang];
+  // Update page title (not on fixed-language pages, which have their own)
+  if (!pageLang) {
+    const path = window.location.pathname;
+    let titleKey = 'page_title_home';
+    if (path.includes('features')) titleKey = 'page_title_features';
+    else if (path.includes('stories')) titleKey = 'page_title_stories';
+    else if (path.includes('blog')) titleKey = 'page_title_blog';
+    const pt = I18N.translations[titleKey];
+    if (pt && pt[lang]) document.title = pt[lang];
+  }
 
   // Update book titles
   document.querySelectorAll('[data-book]').forEach(el => {
@@ -395,7 +433,13 @@ function detectBrowserLang() {
 
 /* ---------- Init Language ---------- */
 function initI18n() {
-  const saved = localStorage.getItem('faby_lang');
+  const pageLang = getPageLang();
+  if (pageLang) {
+    setLanguage(pageLang, { init: true });
+    return;
+  }
+  let saved = null;
+  try { saved = localStorage.getItem('faby_lang'); } catch (e) {}
   const lang = saved && I18N.languages[saved] ? saved : detectBrowserLang();
   setLanguage(lang);
 }

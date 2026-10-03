@@ -5,7 +5,7 @@
 > çocuğun kahraman olduğu özgün bir masal yazar, illüstrasyonlarını üretir ve
 > sesli okur. Klasik dünya masallarından oluşan bir kütüphane de içerir.
 > Uygulama yedi dilde çalışır (Türkçe, İngilizce, İspanyolca, Fransızca,
-> Arapça, Hintçe, Çince); bu web sitesi şu an yalnızca Türkçedir.
+> Arapça, Hintçe, Çince); bu web sitesi ağırlıklı olarak Türkçedir.
 > Site ayrıca çocuk gelişimi ve ebeveynlik üzerine uzun biçimli bir blog barındırır.
 
 ## Ürün sayfaları
@@ -41,12 +41,21 @@ Dokuz uzun biçimli Türkçe rehber. Her biri 2.000–4.000 kelime arasında.
 
 ## Yasal
 
-- [Gizlilik Politikası](https://www.fabyfun.com/gizlilik.html): Çocuk gizliliği (COPPA/GDPR-K), toplanan veri türleri, yapay zekâ işleme, üçüncü taraf hizmetler, saklama ve haklar. Resmî metin İngilizcedir.
-- [Kullanım Şartları](https://www.fabyfun.com/kullanim-sartlari.html): Hesap, abonelik, içerik kullanımı ve sorumluluklar. Resmî metin İngilizcedir.
+Türkçe ve İngilizce metinler resmîdir; diğer dillerdeki gizlilik sayfaları bilgilendirme amaçlı özetlerdir.
+
+- [Gizlilik Politikası](https://www.fabyfun.com/gizlilik.html): Toplanan veriler (veri / amaç / alıcı / saklama tablosu), çocuk verisi ve ebeveyn rızası, yapay zekâ sağlayıcılarına aktarım (Anthropic, OpenAI, Replicate), reklamlar (Android AdMob), analitik, bildirimler, sosyal özellikler, yurt dışı aktarım, saklama, haklar (KVKK, GDPR, COPPA) ve silme.
+- [Privacy Policy (English)](https://www.fabyfun.com/en/privacy.html): Gizlilik politikasının İngilizce tam metni.
+- Gizlilik özeti: [Español](https://www.fabyfun.com/es/privacy.html), [Français](https://www.fabyfun.com/fr/privacy.html), [العربية](https://www.fabyfun.com/ar/privacy.html), [हिन्दी](https://www.fabyfun.com/hi/privacy.html), [中文](https://www.fabyfun.com/zh/privacy.html): Kısa gizlilik özeti ve hesap silme adımları.
+- [Kullanım Şartları](https://www.fabyfun.com/kullanim-sartlari.html) / [Terms of Use](https://www.fabyfun.com/en/terms.html): Hesap, ebeveyn sorumluluğu, yapay zekâ içeriği, Faby Pro (haftada 7 masal), jetonlar, otomatik yenilenen abonelikler, reklamlar, kabul edilebilir kullanım, fesih.
+- [KVKK Aydınlatma Metni](https://www.fabyfun.com/kvkk-aydinlatma.html): 6698 sayılı KVKK md. 10 aydınlatma metni (yalnızca Türkçe).
+- [Açık Rıza Metni](https://www.fabyfun.com/acik-riza.html) / [Parental Consent](https://www.fabyfun.com/en/consent.html): Çocuk profili, fotoğraf, çizim ve ses verilerinin işlenmesi ile yurt dışındaki yapay zekâ sağlayıcılarına aktarım için ebeveyn rızası.
+- [Hesap ve Veri Silme](https://www.fabyfun.com/hesap-silme.html) / [Delete Your Account](https://www.fabyfun.com/en/delete-account.html): Uygulama içinden ve e-posta ile hesap silme, silinen ve saklanan veriler, işlem süresi.
+- [Çocuk Güvenliği Standartları](https://www.fabyfun.com/cocuk-guvenligi.html) / [Child Safety Standards](https://www.fabyfun.com/en/child-safety.html): Serbest metinli sohbet olmaması, kelime listesinden takma adlar, ebeveyn kapısı, bildirim kanalı, çocuk istismarına sıfır tolerans.
+- [Ebeveynler İçin Özet](https://www.fabyfun.com/ebeveynler.html) / [Parent Summary](https://www.fabyfun.com/en/parents.html): Veriler, alıcılar, reklamlar, silme ve bildirme hakkında tek sayfalık özet.
 
 ## Notlar
 
-- Bu site Türkçedir; uygulama çok dilli olduğu hâlde sitenin başka dilde
-  sürümü şu an yayında değildir.
+- Bu site ağırlıklı olarak Türkçedir. Yasal metinlerin İngilizce sürümleri
+  /en/ altında, gizlilik özetleri /es/, /fr/, /ar/, /hi/ ve /zh/ altında yer alır.
 - Blog içeriği ebeveynlere yöneliktir ve genel bilgilendirme amaçlıdır; tıbbi
   veya psikolojik tanı/tedavi tavsiyesi değildir.

@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="tr">
+<!-- TASLAK — avukat onayı önerilir (2026-10-02) -->
+<html lang="tr" data-page-lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>İletişim – Faby</title>
-  <meta name="description" content="Faby destek, hesap silme talebi, içerik bildirimi ve iş birliği için iletişim bilgileri.">
-  <meta name="keywords" content="Faby iletişim, destek, hesap silme talebi, içerik bildirimi">
+  <title>Ebeveynler İçin Özet – Faby</title>
+  <meta name="description" content="Ebeveynler için tek sayfalık özet: Faby hangi verileri kullanır, kimlerle paylaşır, reklamlar, hesap silme ve içerik bildirme.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.fabyfun.com/iletisim.html">
+  <link rel="canonical" href="https://www.fabyfun.com/ebeveynler.html">
+  <link rel="alternate" hreflang="tr" href="https://www.fabyfun.com/ebeveynler.html">
+  <link rel="alternate" hreflang="en" href="https://www.fabyfun.com/en/parents.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.fabyfun.com/en/parents.html">
   <link rel="icon" type="image/png" href="images/logo/logo_name.png">
   <link rel="apple-touch-icon" href="images/logo/logo_name.png">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="İletişim – Faby">
-  <meta property="og:description" content="Faby destek, hesap silme talebi, içerik bildirimi ve iş birliği için iletişim bilgileri.">
-  <meta property="og:url" content="https://www.fabyfun.com/iletisim.html">
+  <meta property="og:title" content="Ebeveynler İçin Özet – Faby">
+  <meta property="og:description" content="Ebeveynler için tek sayfalık özet: Faby hangi verileri kullanır, kimlerle paylaşır, reklamlar, hesap silme ve içerik bildirme.">
+  <meta property="og:url" content="https://www.fabyfun.com/ebeveynler.html">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:image" content="https://www.fabyfun.com/images/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="İletişim – Faby">
-  <meta name="twitter:description" content="Faby destek, hesap silme talebi, içerik bildirimi ve iş birliği için iletişim bilgileri.">
+  <meta name="twitter:title" content="Ebeveynler İçin Özet – Faby">
+  <meta name="twitter:description" content="Ebeveynler için tek sayfalık özet: Faby hangi verileri kullanır, kimlerle paylaşır, reklamlar, hesap silme ve içerik bildirme.">
   <meta name="twitter:image" content="https://www.fabyfun.com/images/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,33 +46,46 @@
 
     <style>
       .legal-wrap { max-width: 860px; margin: 0 auto; padding: 0 1rem; }
-      .legal-wrap h1 { font-size: 2.5rem; font-weight: 900; color: #fff; margin-bottom: .5rem; }
+      .legal-wrap h1 { font-size: 2.5rem; font-weight: 900; color: #fff; margin-bottom: .5rem; line-height: 1.2; }
       .legal-meta { color: #a99cc9; font-size: .95rem; margin-bottom: 2.5rem; }
-      .legal-wrap h2 { font-size: 1.5rem; font-weight: 800; color: #fcd34d; margin: 2.5rem 0 .9rem; }
+      .legal-wrap h2 { font-size: 1.5rem; font-weight: 800; color: #fcd34d; margin: 2.5rem 0 .9rem; scroll-margin-top: 110px; }
       .legal-wrap h3 { font-size: 1.15rem; font-weight: 700; color: #e9ddff; margin: 1.8rem 0 .6rem; }
       .legal-wrap p  { color: #cfc2ec; line-height: 1.75; margin-bottom: 1rem; }
+      .legal-wrap a  { color: #fcd34d; font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
+      .legal-wrap a:hover { text-decoration: underline; }
       .legal-list { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; }
+      ol.legal-list { list-style: decimal; }
       .legal-list li { color: #cfc2ec; line-height: 1.75; margin-bottom: .6rem; }
-      .legal-list li strong { color: #fff; }
+      .legal-list li strong, .legal-wrap p strong { color: #fff; }
       .legal-note { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
-                    border-radius: 14px; padding: 1.1rem 1.3rem; color: #cfc2ec; margin-bottom: 2rem; }
+                    border-radius: 14px; padding: 1.1rem 1.3rem; color: #cfc2ec; margin-bottom: 2rem; line-height: 1.7; }
+      .legal-note p:last-child { margin-bottom: 0; }
       .contact-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
                       border-radius: 18px; padding: 1.6rem 1.8rem; margin-bottom: 1.2rem; }
       .contact-card h3 { margin-top: 0; }
-      .contact-card a { color: #fcd34d; text-decoration: none; font-weight: 600; }
-      .contact-card a:hover { text-decoration: underline; }
+      .contact-card p:last-child, .contact-card ul:last-child { margin-bottom: 0; }
+      .lang-links { color: #a99cc9; font-size: .92rem; margin: -1.5rem 0 2rem; line-height: 1.9; }
+      .lang-links a { margin: 0 .35rem; white-space: nowrap; }
+      .legal-toc { columns: 2 240px; column-gap: 2rem; }
+      .legal-toc li { break-inside: avoid; margin-bottom: .35rem; }
+      .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 0 1.5rem;
+                    border: 1px solid rgba(255,255,255,.12); border-radius: 14px; }
+      .legal-table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: .92rem; }
+      .legal-table th, .legal-table td { text-align: left; vertical-align: top; padding: .8rem .9rem;
+                    border-bottom: 1px solid rgba(255,255,255,.1); color: #cfc2ec; line-height: 1.6; }
+      .legal-table th { color: #fff; background: rgba(255,255,255,.06); font-weight: 700; }
+      .legal-table tr:last-child td { border-bottom: 0; }
+      .legal-table td strong { color: #fff; }
       .ph { background: rgba(252,211,77,.14); color: #fcd34d; border: 1px dashed rgba(252,211,77,.6);
-            border-radius: 6px; padding: 0 .3rem; font-weight: 700; }
+            border-radius: 6px; padding: 0 .3rem; font-weight: 700; unicode-bidi: isolate; overflow-wrap: anywhere; }
+      [dir="rtl"] .ph { direction: ltr; display: inline-block; max-width: 100%; }
+      [dir="rtl"] .legal-list { padding-left: 0; padding-right: 1.5rem; }
+      [dir="rtl"] .legal-table th, [dir="rtl"] .legal-table td { text-align: right; }
+      @media (max-width: 640px) {
+        .legal-wrap h1 { font-size: 2rem; }
+        .contact-card { padding: 1.2rem 1.2rem; }
+      }
     </style>
-
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"ContactPage","name":"İletişim – Faby",
-     "url":"https://www.fabyfun.com/iletisim.html",
-     "mainEntity":{"@type":"Organization","name":"Faby","email":"social_international@fabyfun.com",
-       "url":"https://www.fabyfun.com/",
-       "contactPoint":[{"@type":"ContactPoint","contactType":"customer support",
-         "email":"social_international@fabyfun.com","availableLanguage":["tr","en"]}]}}
-    </script>
   </head>
   <body>
 <header class="site-header" role="banner">
@@ -79,7 +95,7 @@
       </a>
       <nav class="nav-menu flex items-center gap-8" id="nav-menu">
         <a href="index.html" class="nav-link" data-i18n="nav_home">Ana Sayfa</a>
-        <a href="features.html" class="nav-link active" data-i18n="nav_features">Özellikler</a>
+        <a href="features.html" class="nav-link" data-i18n="nav_features">Özellikler</a>
         <a href="stories.html" class="nav-link" data-i18n="nav_stories">Masallar</a>
         <a href="blog.html" class="nav-link" data-i18n="nav_blog">Blog</a>
         <a href="iletisim.html" class="nav-link" data-i18n="nav_contact">İletişim</a>
@@ -109,52 +125,65 @@
   </header>
   <main class="pt-32 pb-20">
     <div class="legal-wrap">
-        <h1>İletişim</h1>
-        <p class="legal-meta">Son güncelleme: 2 Ekim 2026</p>
-
-        <p>Faby ile ilgili her konuda bize yazabilirsiniz. Mesajlarınızı genellikle birkaç iş günü içinde yanıtlıyoruz.</p>
+        <h1>Ebeveynler İçin Özet</h1>
+        <p class="legal-meta">Son güncelleme: 2 Ekim 2026 · Bu sayfa bir özettir; bağlayıcı metinler <a href="gizlilik.html">Gizlilik Politikası</a> ve <a href="kullanim-sartlari.html">Kullanım Şartları</a>'dır.</p>
+        <p class="lang-links">Diğer dil: <a href="en/parents.html" hreflang="en">English</a></p>
 
         <div class="contact-card">
-          <h3>Destek ve genel sorular</h3>
-          <p>Uygulamayla ilgili sorun, soru veya öneriniz için:</p>
-          <p><a href="mailto:social_international@fabyfun.com">social_international@fabyfun.com</a></p>
+          <h3>Faby nedir, kim kullanır?</h3>
+          <p>Faby, girdiğiniz bilgilere göre yapay zekâ ile kişiselleştirilmiş masal yazan, resimleyen ve seslendiren bir uygulamadır. Hesabı siz (ebeveyn veya yasal veli) Google ya da Apple ile giriş yaparak açarsınız. Hesap açmadan misafir olarak 1 ücretsiz masal oluşturulabilir; misafir masalları 7 gün sonra silinir.</p>
         </div>
 
         <div class="contact-card">
-          <h3>Hesap ve veri silme talebi</h3>
-          <p>Hesabınızı ve verilerinizi uygulama içinden silebilirsiniz: <strong>Profilim &rarr; Hesap İşlemleri &rarr; Üyeliği Sil</strong>.</p>
-          <p>Uygulamaya erişiminiz yoksa (misafir kullanımlar dahil), hesabınıza bağlı e-posta adresini veya arkadaş kodunuzu belirterek
-             <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> adresine &ldquo;Hesap Silme Talebi&rdquo; konulu bir e-posta gönderin.
-             Talepler en geç 30 gün içinde tamamlanır.</p>
-          <p>Nelerin silindiği, nelerin neden saklandığı ve adım adım anlatım için: <a href="hesap-silme.html">Hesap ve Veri Silme</a>.</p>
+          <h3>Hangi bilgileri giriyorsunuz?</h3>
+          <ul class="legal-list">
+            <li><strong>Çocuk (karakter) profili:</strong> ad, yaş aralığı, cinsiyet, görünüm tarifi. Gerçek ad yerine takma ad da kullanabilirsiniz.</li>
+            <li><strong>Masal girdileri:</strong> isimler, temalar, dersler (en fazla 200 karakter).</li>
+            <li><strong>İsteğe bağlı:</strong> fotoğrafla giydirme için fotoğraf (analizden hemen sonra silinir), Çizim Atölyesi için çizimler, ses klonlama için bir yetişkinin en az 60 saniyelik ses kaydı.</li>
+          </ul>
         </div>
 
         <div class="contact-card">
-          <h3>Çocuk güvenliği ve içerik bildirimi</h3>
-          <p>Uygunsuz bir içerikle karşılaştıysanız veya çocuk güvenliğiyle ilgili bir endişeniz varsa,
-             lütfen <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> adresine &ldquo;İçerik Bildirimi&rdquo; veya &ldquo;Çocuk Güvenliği Bildirimi&rdquo; konusuyla yazın.
-             Uygulama içi &ldquo;Bildir&rdquo; seçeneği bir sonraki sürümde eklenecektir. Ayrıntılar: <a href="cocuk-guvenligi.html">Çocuk Güvenliği Standartları</a>.</p>
+          <h3>Bu bilgiler kime gidiyor?</h3>
+          <ul class="legal-list">
+            <li><strong>Anthropic (ABD):</strong> masal metnini yazar; masal girdisini ve çocuk profilini ad dahil alır.</li>
+            <li><strong>Replicate (ABD):</strong> illüstrasyonlar (görünüm tarifi, ad olmadan), seslendirme (masal metni, adı içerebilir) ve ses klonlama.</li>
+            <li><strong>OpenAI (ABD):</strong> bazı illüstrasyonlar (ad olmadan), fotoğraf ve çizim analizi.</li>
+            <li><strong>Google (Firebase / Google Cloud, AB bölgesi):</strong> barındırma, giriş, bildirimler ve kendi analitiğimiz.</li>
+            <li><strong>Apple, Google ve RevenueCat:</strong> satın alma ve abonelik işlemleri.</li>
+          </ul>
+          <p>Bir sonraki sürümden itibaren uygulama, çocuğa ait bilgileri yapay zekâ sağlayıcılarına göndermeden önce sizden açık rıza isteyecektir (<a href="acik-riza.html">Açık Rıza Metni</a>). Ses klonlama için onay şimdiden istenmektedir.</p>
         </div>
 
         <div class="contact-card">
-          <h3>Kişisel veri talepleri (KVKK / GDPR)</h3>
-          <p>Kişisel verilerinize ilişkin talepleriniz için <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> adresine yazabilirsiniz.
-             Başvuru usulü: <a href="kvkk-aydinlatma.html#basvuru">KVKK Aydınlatma Metni</a> · <a href="gizlilik.html#haklar">Gizlilik Politikası</a>.</p>
+          <h3>Reklamlar ve analitik</h3>
+          <ul class="legal-list">
+            <li><strong>Android:</strong> Ücretsiz klasik masallar bölümünde Google AdMob reklamları gösterilir (banner ve bazı masallarda kısa video). Reklamlar çocuklara yönelik olarak işaretlenir, en fazla "G" derecelendirmelidir ve kişiselleştirilmez.</li>
+            <li><strong>iOS:</strong> 5.3.0 ve sonraki sürümlerde reklam ve Google Firebase Analytics yoktur; daha eski iOS sürümlerinde Android'dekine benzer reklamlar görülebilir.</li>
+            <li><strong>Analitik:</strong> Uygulama kullanımını kendi sistemimizle ölçeriz; bu veriler kullanıcı ve cihaz kimliğiyle ilişkilidir (anonim değildir). Ham kayıtlar 365 gün sonra silinir. Android'de satın almaları ölçmek için Google Firebase Analytics de kullanılır (reklam kimliği toplama kapalı).</li>
+          </ul>
         </div>
 
         <div class="contact-card">
-          <h3>İş birliği ve basın</h3>
-          <p>İş birliği, basın ve kurumsal talepler için: <a href="mailto:social_international@fabyfun.com">social_international@fabyfun.com</a></p>
+          <h3>Bildirimler ve sosyal özellikler</h3>
+          <ul class="legal-list">
+            <li>Masal hazır, sistem ve tanıtım bildirimleri gönderilir; bildirimleri cihaz ayarlarından kapatabilirsiniz. Tanıtım bildirimleri için uygulama içi anahtar bir sonraki sürümde eklenecektir.</li>
+            <li>Kullanıcılar arasında sohbet veya serbest metinli mesajlaşma yoktur. Takma adlar kelime listelerinden seçilir. Hediye edilen masallar karakter adını içerebilir.</li>
+            <li>Satın alma, ayarlar, dış bağlantılar ve paylaşım basit bir yetişkin doğrulamasıyla korunur (şu anda bazı yaş gruplarında, bir sonraki sürümde tüm yaş gruplarında).</li>
+          </ul>
         </div>
 
-        <h2>Sosyal medya</h2>
-        <ul class="legal-list">
-          <li><a href="https://www.instagram.com/fabytales/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="https://www.tiktok.com/@fabytales" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-          <li><a href="https://www.youtube.com/@fabytales" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-          <li><a href="https://www.facebook.com/fabytales/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li><a href="https://www.linkedin.com/company/fabytales/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        </ul>
+        <div class="contact-card">
+          <h3>Hesabı nasıl silerim?</h3>
+          <p><strong>Profilim</strong> → (istenirse ebeveyn doğrulaması) → <strong>Hesap İşlemleri</strong> → <strong>Üyeliği Sil</strong>. Uygulamaya erişemiyorsanız <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> adresine hesabınıza bağlı e-posta adresini veya arkadaş kodunuzu yazın. Talepler en geç 30 gün içinde tamamlanır. Aboneliği ayrıca App Store veya Google Play'den iptal etmeyi unutmayın. Ayrıntılar: <a href="hesap-silme.html">Hesap ve Veri Silme</a>.</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Uygunsuz bir içerik mi gördünüz?</h3>
+          <p>Otomatik güvenlik önlemleri kullanıyoruz, ancak her masal bir insan tarafından incelenmez ve yapay zekâ çıktısı zaman zaman hatalı veya uygunsuz olabilir. Lütfen masalın adını ve tarihini <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> adresine bildirin. Uygulama içi "Bildir" seçeneği bir sonraki sürümde eklenecektir. Ayrıntılar: <a href="cocuk-guvenligi.html">Çocuk Güvenliği Standartları</a>.</p>
+        </div>
+
+        <p>Tüm metinler: <a href="gizlilik.html">Gizlilik Politikası</a> · <a href="kvkk-aydinlatma.html">KVKK Aydınlatma Metni</a> · <a href="acik-riza.html">Açık Rıza Metni</a> · <a href="kullanim-sartlari.html">Kullanım Şartları</a> · <a href="hesap-silme.html">Hesap ve Veri Silme</a> · <a href="cocuk-guvenligi.html">Çocuk Güvenliği</a></p>
     </div>
   </main>
 <footer class="site-footer pt-16 pb-8 border-t border-white/10" id="iletisim">

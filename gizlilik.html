@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="tr">
+<!-- TASLAK — avukat onayı önerilir (2026-10-02) -->
+<html lang="tr" data-page-lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gizlilik Politikası – Faby</title>
-  <meta name="description" content="Faby gizlilik politikası: çocuk verisinin korunması, toplanan bilgiler, yapay zekâ işleme, üçüncü taraf hizmetler ve haklarınız.">
-  <meta name="keywords" content="gizlilik politikası, çocuk verisi, COPPA, KVKK, veri güvenliği, Faby">
+  <meta name="description" content="Faby gizlilik politikası: hangi verileri topladığımız, yapay zekâ sağlayıcılarına aktarım, reklamlar, analitik, saklama süreleri, haklarınız ve hesap silme.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.fabyfun.com/gizlilik.html">
+  <link rel="alternate" hreflang="tr" href="https://www.fabyfun.com/gizlilik.html">
+  <link rel="alternate" hreflang="en" href="https://www.fabyfun.com/en/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://www.fabyfun.com/es/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://www.fabyfun.com/fr/privacy.html">
+  <link rel="alternate" hreflang="ar" href="https://www.fabyfun.com/ar/privacy.html">
+  <link rel="alternate" hreflang="hi" href="https://www.fabyfun.com/hi/privacy.html">
+  <link rel="alternate" hreflang="zh" href="https://www.fabyfun.com/zh/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.fabyfun.com/en/privacy.html">
   <link rel="icon" type="image/png" href="images/logo/logo_name.png">
   <link rel="apple-touch-icon" href="images/logo/logo_name.png">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Gizlilik Politikası – Faby">
-  <meta property="og:description" content="Faby gizlilik politikası: çocuk verisinin korunması, toplanan bilgiler, yapay zekâ işleme, üçüncü taraf hizmetler ve haklarınız.">
+  <meta property="og:description" content="Faby gizlilik politikası: hangi verileri topladığımız, yapay zekâ sağlayıcılarına aktarım, reklamlar, analitik, saklama süreleri, haklarınız ve hesap silme.">
   <meta property="og:url" content="https://www.fabyfun.com/gizlilik.html">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:image" content="https://www.fabyfun.com/images/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Gizlilik Politikası – Faby">
-  <meta name="twitter:description" content="Faby gizlilik politikası: çocuk verisinin korunması, toplanan bilgiler, yapay zekâ işleme, üçüncü taraf hizmetler ve haklarınız.">
+  <meta name="twitter:description" content="Faby gizlilik politikası: hangi verileri topladığımız, yapay zekâ sağlayıcılarına aktarım, reklamlar, analitik, saklama süreleri, haklarınız ve hesap silme.">
   <meta name="twitter:image" content="https://www.fabyfun.com/images/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,16 +51,45 @@
 
     <style>
       .legal-wrap { max-width: 860px; margin: 0 auto; padding: 0 1rem; }
-      .legal-wrap h1 { font-size: 2.5rem; font-weight: 900; color: #fff; margin-bottom: .5rem; }
+      .legal-wrap h1 { font-size: 2.5rem; font-weight: 900; color: #fff; margin-bottom: .5rem; line-height: 1.2; }
       .legal-meta { color: #a99cc9; font-size: .95rem; margin-bottom: 2.5rem; }
-      .legal-wrap h2 { font-size: 1.5rem; font-weight: 800; color: #fcd34d; margin: 2.5rem 0 .9rem; }
+      .legal-wrap h2 { font-size: 1.5rem; font-weight: 800; color: #fcd34d; margin: 2.5rem 0 .9rem; scroll-margin-top: 110px; }
       .legal-wrap h3 { font-size: 1.15rem; font-weight: 700; color: #e9ddff; margin: 1.8rem 0 .6rem; }
       .legal-wrap p  { color: #cfc2ec; line-height: 1.75; margin-bottom: 1rem; }
+      .legal-wrap a  { color: #fcd34d; font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
+      .legal-wrap a:hover { text-decoration: underline; }
       .legal-list { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; }
+      ol.legal-list { list-style: decimal; }
       .legal-list li { color: #cfc2ec; line-height: 1.75; margin-bottom: .6rem; }
-      .legal-list li strong { color: #fff; }
+      .legal-list li strong, .legal-wrap p strong { color: #fff; }
       .legal-note { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
-                    border-radius: 14px; padding: 1.1rem 1.3rem; color: #cfc2ec; margin-bottom: 2rem; }
+                    border-radius: 14px; padding: 1.1rem 1.3rem; color: #cfc2ec; margin-bottom: 2rem; line-height: 1.7; }
+      .legal-note p:last-child { margin-bottom: 0; }
+      .contact-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
+                      border-radius: 18px; padding: 1.6rem 1.8rem; margin-bottom: 1.2rem; }
+      .contact-card h3 { margin-top: 0; }
+      .contact-card p:last-child, .contact-card ul:last-child { margin-bottom: 0; }
+      .lang-links { color: #a99cc9; font-size: .92rem; margin: -1.5rem 0 2rem; line-height: 1.9; }
+      .lang-links a { margin: 0 .35rem; white-space: nowrap; }
+      .legal-toc { columns: 2 240px; column-gap: 2rem; }
+      .legal-toc li { break-inside: avoid; margin-bottom: .35rem; }
+      .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 0 1.5rem;
+                    border: 1px solid rgba(255,255,255,.12); border-radius: 14px; }
+      .legal-table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: .92rem; }
+      .legal-table th, .legal-table td { text-align: left; vertical-align: top; padding: .8rem .9rem;
+                    border-bottom: 1px solid rgba(255,255,255,.1); color: #cfc2ec; line-height: 1.6; }
+      .legal-table th { color: #fff; background: rgba(255,255,255,.06); font-weight: 700; }
+      .legal-table tr:last-child td { border-bottom: 0; }
+      .legal-table td strong { color: #fff; }
+      .ph { background: rgba(252,211,77,.14); color: #fcd34d; border: 1px dashed rgba(252,211,77,.6);
+            border-radius: 6px; padding: 0 .3rem; font-weight: 700; unicode-bidi: isolate; overflow-wrap: anywhere; }
+      [dir="rtl"] .ph { direction: ltr; display: inline-block; max-width: 100%; }
+      [dir="rtl"] .legal-list { padding-left: 0; padding-right: 1.5rem; }
+      [dir="rtl"] .legal-table th, [dir="rtl"] .legal-table td { text-align: right; }
+      @media (max-width: 640px) {
+        .legal-wrap h1 { font-size: 2rem; }
+        .contact-card { padding: 1.2rem 1.2rem; }
+      }
     </style>
   </head>
   <body>
@@ -63,7 +100,7 @@
       </a>
       <nav class="nav-menu flex items-center gap-8" id="nav-menu">
         <a href="index.html" class="nav-link" data-i18n="nav_home">Ana Sayfa</a>
-        <a href="features.html" class="nav-link active" data-i18n="nav_features">Özellikler</a>
+        <a href="features.html" class="nav-link" data-i18n="nav_features">Özellikler</a>
         <a href="stories.html" class="nav-link" data-i18n="nav_stories">Masallar</a>
         <a href="blog.html" class="nav-link" data-i18n="nav_blog">Blog</a>
         <a href="iletisim.html" class="nav-link" data-i18n="nav_contact">İletişim</a>
@@ -94,68 +131,260 @@
   <main class="pt-32 pb-20">
     <div class="legal-wrap">
         <h1>Gizlilik Politikası</h1>
-        <p class="legal-meta">Son güncelleme: 20 Eylül 2026</p>
-        <div class="legal-note">Bu politikanın resmî metni İngilizcedir ve aşağıda olduğu gibi yayımlanmıştır.</div>
-        <p>(&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting the personal information of our users (&quot;User,&quot; &quot;you,&quot; or &quot;parent&quot;). This Privacy Policy explains how we collect, use, and safeguard information when you use our mobile application, Faby (the &quot;App&quot;).</p>
-        <h2>1. CHILDREN’S PRIVACY (COPPA &amp; GDPR-K)</h2>
-        <p>We take children&#x27;s privacy very seriously.</p>
+        <p class="legal-meta">Son güncelleme: 2 Ekim 2026 · Faby mobil uygulaması (iOS ve Android, sürüm 5.2.0) ve fabyfun.com için geçerlidir.</p>
+        <p class="lang-links">Diğer diller: <a href="en/privacy.html" hreflang="en">English (tam metin)</a> · <a href="es/privacy.html" hreflang="es">Español</a> · <a href="fr/privacy.html" hreflang="fr">Français</a> · <a href="ar/privacy.html" hreflang="ar">العربية</a> · <a href="hi/privacy.html" hreflang="hi">हिन्दी</a> · <a href="zh/privacy.html" hreflang="zh">中文</a> (özet)</p>
+
+        <div class="legal-note">
+          <p><strong>Kısaca:</strong> Faby'yi ebeveynler kurar ve yönetir. Masal oluşturmak için girdiğiniz bilgiler (çocuğun ya da karakterin adı dahil) masalı yazan ve resimleyen yapay zekâ sağlayıcılarına gönderilir. Android uygulamasındaki ücretsiz klasik masallar bölümünde çocuklara yönelik, kişiselleştirilmemiş reklamlar gösterilir. Hesabınızı istediğiniz zaman uygulama içinden silebilirsiniz.</p>
+          <p>Kısa bir özet için <a href="ebeveynler.html">Ebeveynler İçin Özet</a> sayfasına bakabilirsiniz. Bu politikanın Türkçe ve İngilizce metinleri resmîdir; diğer dillerdeki sayfalar yalnızca bilgilendirme amaçlı özetlerdir.</p>
+        </div>
+
+        <h2 id="icindekiler">İçindekiler</h2>
+        <ol class="legal-list legal-toc">
+          <li><a href="#veri-sorumlusu">Biz kimiz?</a></li>
+          <li><a href="#cocuklar">Çocukların verisi ve ebeveyn rızası</a></li>
+          <li><a href="#veriler">Hangi verileri işliyoruz?</a></li>
+          <li><a href="#yapay-zeka">Yapay zekâ sağlayıcılarına aktarım</a></li>
+          <li><a href="#reklamlar">Reklamlar</a></li>
+          <li><a href="#analitik">Analitik</a></li>
+          <li><a href="#bildirimler">Bildirimler</a></li>
+          <li><a href="#sosyal">Sosyal özellikler</a></li>
+          <li><a href="#hukuki-sebepler">Hukuki sebepler</a></li>
+          <li><a href="#yurt-disi">Yurt dışına aktarım</a></li>
+          <li><a href="#saklama">Saklama süreleri</a></li>
+          <li><a href="#guvenlik">Güvenlik</a></li>
+          <li><a href="#haklar">Haklarınız</a></li>
+          <li><a href="#silme">Hesap ve veri silme</a></li>
+          <li><a href="#web-sitesi">Web sitesi</a></li>
+          <li><a href="#degisiklikler">Değişiklikler</a></li>
+          <li><a href="#iletisim-bilgileri">İletişim</a></li>
+        </ol>
+
+        <h2 id="veri-sorumlusu">1. Biz kimiz?</h2>
+        <p>Faby (mağaza kimliği <strong>com.ay.masalai</strong>), yapay zekâ ile kişiselleştirilmiş çocuk masalları oluşturan bir mobil uygulamadır. Faby, Türkiye'de yerleşik bir geliştirici tarafından sunulur. Bu politikada "biz" ifadesi aşağıdaki veri sorumlusunu anlatır:</p>
         <ul class="legal-list">
-          <li><strong>Target Audience:</strong> Faby is designed for children but is intended to be set up and managed by parents or legal guardians.</li>
-          <li><strong>No Personal Information from Children:</strong> We do not knowingly collect personally identifiable information (PII) like real names, addresses, or phone numbers directly from children under the age of 13 (or the applicable age in your region) without verified parental consent.</li>
-          <li><strong>Parental Control:</strong> Registration and subscription management are behind a &quot;Parental Gate&quot; to ensure they are performed by an adult.</li>
-          <li><strong>No Behavioral Advertising:</strong> We do not serve targeted behavioral advertising to users identified as children.</li>
+          <li><strong>Veri sorumlusu:</strong> Yelkovan.ai (Yiğit Özdemir)</li>
+          <li><strong>E-posta:</strong> <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a></li>
         </ul>
-        <h2>2. INFORMATION WE COLLECT</h2>
-        <h3>A. Information You Provide to Us (Parent/Guardian)</h3>
+        <p>Faby'yi Türkiye, Avrupa Birliği, Amerika Birleşik Devletleri ve başka ülkelerdeki aileler kullanır. Bu nedenle bu politika; 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), AB Genel Veri Koruma Tüzüğü (GDPR, çocuklara ilişkin hükümleri dahil) ve ABD Çocukların Çevrimiçi Gizliliğini Koruma Yasası (COPPA) dikkate alınarak hazırlanmıştır. Türkiye'deki kullanıcılar <a href="kvkk-aydinlatma.html">KVKK Aydınlatma Metni</a>'ni de okuyabilir.</p>
+
+        <h2 id="cocuklar">2. Çocukların verisi ve ebeveyn rızası</h2>
         <ul class="legal-list">
-          <li><strong>Account Information:</strong> If you create an account, we may collect your email address and a password.</li>
-          <li><strong>Profile Data:</strong> You may create profiles for your children (e.g., a nickname or age group) to personalize the story generation. We recommend using nicknames rather than real full names.</li>
-          <li><strong>User Content:</strong> Data you input to generate stories (e.g., &quot;A story about a brave cat&quot;) and drawings created using the in-app drawing tools.</li>
+          <li><strong>Hesabı ebeveyn açar ve yönetir.</strong> Faby çocuklar için masal üretir; ancak hesap sahibi bir yetişkindir (ebeveyn veya yasal veli). Hesap Google, Apple veya e-posta ve şifre ile açılır.</li>
+          <li><strong>Çocuğa ilişkin bilgileri ebeveyn girer.</strong> Karakter adı, yaş aralığı, cinsiyet ve görünüm tarifi gibi bilgileri siz girersiniz. Çocuğunuzun gerçek adını yazmak zorunda değilsiniz; bir takma ad veya hayali bir karakter adı da kullanabilirsiniz. Masal girdilerine adres, okul adı, telefon numarası gibi bilgiler yazmamanızı öneririz.</li>
+          <li><strong>Ebeveyn kapısı.</strong> Satın alma, ayarlar, dış bağlantılar ve paylaşım, basit bir yetişkin doğrulamasıyla korunur. Bu doğrulama şu anda bazı yaş gruplarında gösterilmektedir; bir sonraki uygulama sürümünde tüm yaş gruplarına genişletilecektir.</li>
+          <li><strong>Ebeveyn rızası.</strong> Ses klonlama özelliği kullanılmadan önce uygulama onayınızı ister. Uygulamanın bir sonraki sürümünden itibaren, çocuğa ait bilgiler yapay zekâ sağlayıcılarına gönderilmeden önce ebeveynden açık rıza da istenecektir. Rıza metnini <a href="acik-riza.html">Açık Rıza Metni</a> sayfasında görebilirsiniz. Rızanızı istediğiniz zaman geri alabilirsiniz.</li>
+          <li><strong>Yaş sınırları.</strong> 13 yaşından küçük çocukların (AB'de ülkeye göre 13 ile 16 yaş arasında değişen sınırın altındaki çocukların) verileri ancak ebeveynin katılımı ve rızasıyla işlenmelidir. Faby'de hesap açarak 18 yaşından büyük olduğunuzu ve çocuğun ebeveyni ya da yasal velisi olduğunuzu veya onların izniyle hareket ettiğinizi beyan edersiniz.</li>
+          <li><strong>COPPA kapsamındaki haklarınız.</strong> Ebeveyn olarak çocuğunuz hakkında tuttuğumuz bilgileri inceleme, silinmesini isteme ve daha fazla bilgi toplanmasını reddetme hakkınız vardır (bkz. <a href="#haklar">Haklarınız</a>).</li>
+          <li>Bir çocuğun ebeveyn katılımı olmadan bize kişisel bilgi verdiğini düşünüyorsanız lütfen bize yazın; ilgili verileri sileriz.</li>
         </ul>
-        <h3>B. Information Collected Automatically</h3>
+
+        <h2 id="veriler">3. Hangi verileri işliyoruz?</h2>
+        <p>Aşağıdaki tablo, hangi verileri hangi amaçla işlediğimizi, kimlerle paylaştığımızı ve ne kadar sakladığımızı gösterir. Tabloyu yatay kaydırabilirsiniz.</p>
+        <div class="table-wrap">
+          <table class="legal-table">
+            <thead>
+              <tr><th scope="col">Veri</th><th scope="col">Amaç</th><th scope="col">Kimlerle paylaşılır</th><th scope="col">Ne kadar saklanır</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hesap bilgileri</strong> (Google, Apple veya e-posta ile girişte): e-posta adresi, görünen ad, hesap kimliği</td>
+                <td>Hesap açma ve giriş, masallarınızı hesabınızda saklama, destek</td>
+                <td>Google (Firebase kimlik doğrulama), Apple ve Google oturum açma hizmetleri</td>
+                <td>Hesabınızı silene kadar</td>
+              </tr>
+              <tr>
+                <td><strong>Misafir kullanım</strong>: misafir anahtarı ve misafir olarak oluşturulan masal</td>
+                <td>Hesap açmadan 1 ücretsiz masal oluşturabilmeniz</td>
+                <td>Google Cloud (barındırma); masal üretimi için 4. bölümdeki yapay zekâ sağlayıcıları</td>
+                <td>Misafir masal kayıtları 7 gün sonra otomatik olarak silinir</td>
+              </tr>
+              <tr>
+                <td><strong>Çocuk (karakter) profili</strong>: ad, masal yaş aralığı (2-4, 4-6, 6-8, 8-10, 10-12, 12+), cinsiyet, görünüm tarifi (ten, saç ve göz rengi, kıyafet vb.)</td>
+                <td>Kişiselleştirilmiş masal metni, illüstrasyon ve seslendirme üretmek</td>
+                <td>Anthropic (masal metni; ad dahil), Replicate üzerindeki görsel modelleri ve bazen OpenAI (yalnızca görünüm tarifi, ad olmadan), Replicate üzerindeki Minimax seslendirme modeli (masal metni; adı içerebilir)</td>
+                <td>Hesabınızı silene kadar</td>
+              </tr>
+              <tr>
+                <td><strong>Masal girdileri</strong>: isimler, temalar, verilmek istenen ders gibi serbest metinler (en fazla 200 karakter) ve seçtiğiniz seçenekler</td>
+                <td>Masalı isteğinize göre yazmak</td>
+                <td>Anthropic; seslendirme için masal metni Replicate'e</td>
+                <td>Hesabınızı silene kadar</td>
+              </tr>
+              <tr>
+                <td><strong>Oluşturulan içerik ve kayıtlar</strong>: masal metinleri, görseller, ses dosyaları, masal istekleri ve yapay zekâ istek kayıtları</td>
+                <td>Masalları kitaplığınızda göstermek, hizmeti işletmek, sorunları gidermek</td>
+                <td>Google Firebase / Google Cloud (barındırma)</td>
+                <td>Hesabınızı silene kadar</td>
+              </tr>
+              <tr>
+                <td><strong>Fotoğrafla giydirme</strong> (isteğe bağlı): yüklediğiniz fotoğraf ve analiz sonucu (önerilen cinsiyet, yaş kategorisi, saç, göz ve ten rengi)</td>
+                <td>Karakterin görünümü için öneri üretmek</td>
+                <td>OpenAI (görsel analiz, bir kez)</td>
+                <td>Fotoğraf, analizden hemen sonra silinir. Analiz sonucu hesabınızla birlikte, hesabı silene kadar saklanır</td>
+              </tr>
+              <tr>
+                <td><strong>Çizimler</strong> (isteğe bağlı, Çizim Atölyesi): yüklediğiniz çizimler</td>
+                <td>Çizimi yapay zekâ ile yorumlamak ve kitaplığınızda göstermek</td>
+                <td>OpenAI (analiz)</td>
+                <td>Hesabınızı silene kadar</td>
+              </tr>
+              <tr>
+                <td><strong>Ses klonlama</strong> (isteğe bağlı): bir yetişkinin kaydettiği en az 60 saniyelik ses örneği ve bundan oluşturulan ses</td>
+                <td>Masalları bu sesle seslendirmek</td>
+                <td>Replicate (XTTS modeli)</td>
+                <td>Hesabınızı silene kadar</td>
+              </tr>
+              <tr>
+                <td><strong>Uygulama içi analitik ve hata bilgileri</strong>: rastgele oluşturulan cihaz kimliği, kullanıcı kimliği, uygulama içi olaylar (ör. açılan ekranlar, kullanılan özellikler), cihaz modeli, işletim sistemi, uygulama dili, saat dilimi, IP adresinden çevrimdışı bir veritabanıyla belirlenen ülke, çökme ve performans bilgileri. IP adresinin kendisi saklanmaz; yalnızca tuzlanmış, tek yönlü bir özeti (hash) saklanır.</td>
+                <td>Uygulamanın nasıl kullanıldığını anlamak, hataları düzeltmek, performansı ve özellikleri geliştirmek</td>
+                <td>Kendi sistemimiz (Google Firebase / Google Cloud, europe-west1)</td>
+                <td>Ham olay kayıtları 365 gün sonra otomatik olarak silinir; analitik profiliniz hesabınızla birlikte silinir</td>
+              </tr>
+              <tr>
+                <td><strong>Google Firebase Analytics</strong> (Android uygulamasında ve 5.3.0'dan önceki iOS sürümlerinde): satın alma olayları ile Google'ın bu araçla topladığı standart uygulama ve cihaz bilgileri. Reklam kimliği toplama kapalıdır.</td>
+                <td>Google Ads kampanyalarımızın satın almaya dönüşümünü ölçmek</td>
+                <td>Google</td>
+                <td>Google'ın saklama ayarlarına ve politikalarına tabidir</td>
+              </tr>
+              <tr>
+                <td><strong>Reklam verileri</strong> (Android uygulamasında ve 5.3.0'dan önceki iOS sürümlerinde, ücretsiz klasik masallar bölümünde): IP adresi, cihaz ve uygulama kümesi tanımlayıcıları, reklam etkileşimleri, tanılama bilgileri</td>
+                <td>Çocuklara uygun, kişiselleştirilmemiş reklam göstermek ve ölçmek</td>
+                <td>Google (AdMob)</td>
+                <td>Google'ın politikalarına tabidir</td>
+              </tr>
+              <tr>
+                <td><strong>Satın alma bilgileri</strong>: kullanıcı kimliği, abonelik ve jeton satın alma kayıtları. Kart bilgileriniz bize ulaşmaz; ödemeyi Apple veya Google alır.</td>
+                <td>Faby Pro aboneliğini ve jetonları yönetmek</td>
+                <td>Apple App Store, Google Play, RevenueCat</td>
+                <td>Hesabınızı silene kadar; Apple, Google ve RevenueCat satın alma kayıtlarını vergi ve muhasebe yükümlülükleri gereği daha uzun saklayabilir</td>
+              </tr>
+              <tr>
+                <td><strong>Bildirim bilgileri</strong>: Firebase Cloud Messaging (FCM) belirteci ve bildirim kuyruğu kayıtları</td>
+                <td>Masal hazır, sistem ve tanıtım bildirimleri göndermek</td>
+                <td>Google (Firebase Cloud Messaging)</td>
+                <td>Belirteç hesabınızı silene kadar; gönderim kayıtları en geç 30 gün içinde otomatik silinir (tanıtım kayıtları hesap silindiğinde hemen silinir)</td>
+              </tr>
+              <tr>
+                <td><strong>Sosyal özellikler</strong>: arkadaş kodu, sabit kelime listelerinden seçilen takma ad, avatar, arkadaşlıklar, hediye edilen masallar, emoji tepkileri, birlikte okuma odası</td>
+                <td>Arkadaşlık özelliklerini sunmak</td>
+                <td>Arkadaş olduğunuz kullanıcılar (takma adınızı, avatarınızı ve hediye ettiğiniz masalları görür); Google Cloud (barındırma)</td>
+                <td>Hesabınızı silene kadar</td>
+              </tr>
+              <tr>
+                <td><strong>Destek ve bildirimler</strong>: bize e-posta ile yazdığınızda e-posta adresiniz ve mesajınız; içerik bildirimleri</td>
+                <td>Taleplerinizi ve bildirimlerinizi yanıtlamak, hizmeti güvenli tutmak</td>
+                <td>E-posta hizmet sağlayıcımız; yasal zorunluluk hâlinde yetkili makamlar</td>
+                <td>Talebi sonuçlandırmak için gereken süre boyunca; hesabınıza bağlı bildirim kayıtları hesabınızla birlikte silinir</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="yapay-zeka">4. Yapay zekâ sağlayıcılarına aktarım</h2>
+        <p>Masalları sizin için yazmak, resimlemek ve seslendirmek amacıyla aşağıdaki sağlayıcıları kullanırız. Hepsi ABD'de bulunmaktadır:</p>
         <ul class="legal-list">
-          <li><strong>Usage Data:</strong> Information about how you use the App, such as which stories are read, puzzles completed, and library decorations used.</li>
-          <li><strong>Device Information:</strong> Device model, operating system version, and unique device identifiers (e.g., IDFV for iOS), used solely for app functionality and analytics, not for tracking across other apps.</li>
-          <li><strong>Technical Data:</strong> IP address (masked where possible) and crash logs to help us fix bugs.</li>
+          <li><strong>Anthropic (Claude)</strong> — masal metnini yazar. Masal girdisinin tamamını, çocuk (karakter) profiliyle birlikte, ad dahil alır.</li>
+          <li><strong>Replicate</strong> — illüstrasyonları üreten görsel modellerini (görünüm tarifi, ad olmadan), Minimax seslendirme modelini (masal metni, adı içerebilir) ve ses klonlama için XTTS modelini (yetişkinin ses örneği ve masal metni) çalıştırır.</li>
+          <li><strong>OpenAI</strong> — bazı illüstrasyonlar için görsel modeli (görünüm tarifi, ad olmadan), fotoğrafla giydirmede fotoğrafın bir kez analizi ve çizimlerin analizi.</li>
         </ul>
-        <h2>3. HOW WE USE YOUR INFORMATION</h2>
-        <p>We use the collected information for the following purposes:</p>
+        <p>Bu sağlayıcılar verileri, hizmeti bize sunmak amacıyla işler. Sağlayıcıların kendi saklama ve kullanım uygulamaları, onlarla aramızdaki koşullara ve kendi politikalarına tabidir.</p>
+        <p><strong>Güvenlik önlemleri ve sınırları:</strong> Yapay zekâ isteklerine çocuk güvenliği talimatları ekliyor ve görsel isteklerini otomatik olarak temizliyoruz. Ancak her masal bir insan tarafından incelenmez ve otomatik önlemler kusursuz değildir: yapay zekâ çıktısı zaman zaman hatalı veya uygunsuz olabilir. Böyle bir içerikle karşılaşırsanız lütfen <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> adresine bildirin. Uygulama içi "Bildir" seçeneği bir sonraki sürümde eklenecektir.</p>
+
+        <h2 id="reklamlar">5. Reklamlar</h2>
         <ul class="legal-list">
-          <li><strong>Service Delivery:</strong> To generate AI stories, enable text-to-speech features, and save your library progress.</li>
-          <li><strong>AI Processing:</strong> The text prompts and parameters you select (e.g., &quot;Space adventure,&quot; &quot;Age 6&quot;) are sent to our AI providers to generate the content.</li>
-          <li><strong>Improvement:</strong> To analyze user behavior (anonymously) to improve the story quality and app features.</li>
-          <li><strong>Customer Support:</strong> To respond to your inquiries or technical issues.</li>
+          <li><strong>Android:</strong> Ücretsiz klasik masallar bölümünde Google AdMob reklamları gösterilir: okuma ekranında bir banner ve bazı klasik masallar açılırken kısa bir video reklam.</li>
+          <li><strong>Çocuklara yönelik ayarlar:</strong> Reklam istekleri çocuklara yönelik (COPPA) olarak işaretlenir, içerik derecelendirmesi en fazla "G" (genel izleyici) ile sınırlandırılır ve reklamlar kişiselleştirilmez. Android reklam kimliği izni uygulamadan kaldırılmıştır.</li>
+          <li><strong>Google'a giden veriler:</strong> AdMob reklam göstermek ve ölçmek için IP adresini, cihaz ve uygulama kümesi tanımlayıcılarını, reklam etkileşimlerini ve tanılama bilgilerini alır. Ayrıntılar için <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Gizlilik Politikası</a>'na bakabilirsiniz.</li>
+          <li><strong>iOS:</strong> iOS 5.3.0 ve sonraki sürümlerde reklam yoktur ve Google Firebase Analytics kaldırılmıştır. 5.3.0'dan önceki iOS sürümlerinde aynı bölümde yukarıdakine benzer reklamlar gösterilebilir; uygulamayı güncel tutmanızı öneririz.</li>
         </ul>
-        <h2>4. ARTIFICIAL INTELLIGENCE (AI) &amp; DATA SHARING</h2>
-        <p>Faby uses third-party AI technologies (e.g., OpenAI) to generate text and images.</p>
+
+        <h2 id="analitik">6. Analitik</h2>
         <ul class="legal-list">
-          <li><strong>Input Processing:</strong> When you request a story, the prompt data is transmitted to the AI provider.</li>
-          <li><strong>Anonymization:</strong> We do not send your personal contact information (email, payment info) to the AI provider. Only the story parameters are shared to generate the response.</li>
-          <li><strong>No Training on User Data:</strong> We do not use your children&#x27;s personal stories to train public AI models unless explicitly stated and consented to.</li>
+          <li><strong>Kendi analitiğimiz:</strong> Uygulamanın nasıl kullanıldığını, Google Firebase / Google Cloud üzerindeki kendi sunucularımızda (AB bölgesi europe-west1) ölçeriz. Bu kapsamda rastgele bir cihaz kimliği, uygulama içi olaylar, cihaz modeli, işletim sistemi, uygulama dili, saat dilimi ve IP adresinden çevrimdışı bir veritabanıyla belirlenen ülke işlenir. IP adresinin kendisi saklanmaz; yalnızca tuzlanmış, tek yönlü bir özeti saklanır. Ham olay kayıtları 365 gün sonra otomatik olarak silinir.</li>
+          <li><strong>Bu analitik anonim değildir:</strong> Kayıtlar kullanıcı kimliğiniz ve cihaz kimliğinizle ilişkilidir.</li>
+          <li><strong>Çökme ve performans bilgileri</strong> de aynı kendi sistemimizle toplanır; Firebase Crashlytics kullanılmaz.</li>
+          <li><strong>Google Firebase Analytics:</strong> Android uygulamasında (ve 5.3.0'dan önceki iOS sürümlerinde) satın almaları Google Ads dönüşümü olarak ölçmek için kullanılır. Reklam kimliği toplama kapalıdır.</li>
+          <li>Analitik amaçlı işlemeye itiraz etmek için bize yazabilirsiniz.</li>
         </ul>
-        <h2>5. THIRD-PARTY SERVICES</h2>
-        <p>We may share data with trusted third-party service providers to help us operate the App. These include:</p>
+
+        <h2 id="bildirimler">7. Bildirimler</h2>
+        <p>Bildirimleri Google Firebase Cloud Messaging ile göndeririz; bunun için cihazınızın bildirim belirtecini (FCM token) saklarız. Bildirimler masalınızın hazır olduğunu haber veren ve sistemle ilgili mesajların yanı sıra tanıtım mesajları da içerir. Bildirimleri istediğiniz zaman cihazınızın ayarlarından kapatabilirsiniz. Tanıtım bildirimlerini ayrıca kapatabilmeniz için uygulama içi bir anahtar bir sonraki sürümde eklenecektir.</p>
+
+        <h2 id="sosyal">8. Sosyal özellikler</h2>
         <ul class="legal-list">
-          <li><strong>Cloud Storage:</strong> (e.g., Firebase, AWS) To store your created stories, drawings, and library progress securely.</li>
-          <li><strong>Analytics:</strong> (e.g., Google Firebase Analytics) To understand app usage. We configure these services to restrict data collection for child-directed apps.</li>
-          <li><strong>Payment Processors:</strong> (Apple App Store / Google Play Store) We do not process or store your credit card information directly. All transactions are handled by the respective app stores.</li>
+          <li>Faby'de arkadaş kodu, sabit kelime listelerinden seçilen takma adlar, avatarlar, bir masalın kopyasını arkadaşa hediye etme, emoji tepkileri ve birlikte okuma odası bulunur.</li>
+          <li><strong>Kullanıcılar arasında sohbet veya serbest metinli mesajlaşma yoktur.</strong> Takma adlar serbest metin olarak yazılamaz.</li>
+          <li>Arkadaşlarınız takma adınızı, avatarınızı ve onlara hediye ettiğiniz masalları görebilir.</li>
+          <li>Hediye edilen bir masal, ebeveynin yazdığı karakter adını içerebilir. Masal hediye etmeden önce bunu göz önünde bulundurun.</li>
         </ul>
-        <h2>6. DATA SECURITY</h2>
-        <p>We implement administrative, technical, and physical security measures to help protect your personal information. This includes encryption of data in transit (HTTPS) and at rest. However, please remember that no method of transmission over the internet is 100% secure.</p>
-        <h2>7. DATA RETENTION AND DELETION</h2>
+
+        <h2 id="hukuki-sebepler">9. Hukuki sebepler</h2>
         <ul class="legal-list">
-          <li><strong>Retention:</strong> We retain your account data and story history as long as your account is active.</li>
-          <li><strong>Deletion:</strong> You have the right to request the deletion of your account and all associated data. You can do this via the &quot;Delete Account&quot; option within the App settings or by emailing us. Once deleted, your library and stories cannot be recovered.</li>
+          <li><strong>Sözleşmenin kurulması ve ifası</strong> (KVKK md. 5/2-c; GDPR md. 6/1-b): hesap, masal üretimi, satın alımlar, hizmet bildirimleri, sosyal özellikler.</li>
+          <li><strong>Açık rıza</strong> (KVKK md. 5/1 ve md. 6; GDPR md. 6/1-a, md. 8 ve md. 9/2-a): çocuğa ait verilerin (fotoğraf ve çizimler dahil) yapay zekâ sağlayıcılarına aktarılması (bu rıza bir sonraki sürümden itibaren uygulamada istenecektir), ses klonlama (uygulama kayıttan önce onay ister), tanıtım bildirimleri (cihaz bildirim izni).</li>
+          <li><strong>Hukuki yükümlülük</strong> (KVKK md. 5/2-ç; GDPR md. 6/1-c): satın alma ve muhasebe kayıtları, yetkili makam talepleri.</li>
+          <li><strong>Meşru menfaat</strong> (KVKK md. 5/2-f; GDPR md. 6/1-f): uygulama içi analitik, hata ve performans takibi, güvenlik, ücretsiz bölümde kişiselleştirilmemiş reklamlar ve satın alma dönüşüm ölçümü.</li>
+          <li><strong>Bir hakkın tesisi, kullanılması veya korunması</strong> (KVKK md. 5/2-e): talepler, bildirimler ve olası uyuşmazlıklar.</li>
         </ul>
-        <h2>8. CALIFORNIA PRIVACY RIGHTS (CCPA)</h2>
-        <p>If you are a California resident, you have specific rights regarding your personal information, including the right to access and delete your data. We do not &quot;sell&quot; your personal information as defined by the CCPA.</p>
-        <h2>9. CHANGES TO THIS PRIVACY POLICY</h2>
-        <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify you through the App or via email. We encourage you to review this policy periodically.</p>
-        <h2>10. CONTACT US</h2>
-        <p>If you have questions about this Privacy Policy or our data practices regarding children, please contact us at:</p>
+
+        <h2 id="yurt-disi">10. Yurt dışına aktarım</h2>
+        <p>Verilerimiz ağırlıklı olarak Google Cloud'un AB bölgesinde (europe-west1) barındırılır; bazı Google hizmetleri verileri ABD'de veya başka ülkelerde işleyebilir. Anthropic, OpenAI, Replicate (Minimax seslendirme ve XTTS modelleri dahil) ve RevenueCat ABD'dedir. Google AdMob ile Apple ve Google'ın oturum açma ve mağaza hizmetleri birden fazla ülkede çalışır.</p>
+        <p>Bu aktarımlar KVKK md. 9 ve GDPR'ın uluslararası aktarım kurallarına tabidir. Aktarımlarda standart sözleşme hükümleri (AB Standart Sözleşme Maddeleri) gibi uygun güvencelere ve gerektiğinde açık rızanıza dayanırız. Bu ülkelerde Türkiye veya AB ile aynı düzeyde veri koruma kuralları bulunmayabilir. Bir aktarımın hangi güvenceye dayandığını öğrenmek için bize yazabilirsiniz.</p>
+
+        <h2 id="saklama">11. Saklama süreleri</h2>
         <ul class="legal-list">
-          <li><strong>Email:</strong> yyigitoozdemir@gmail.com</li>
+          <li><strong>Hesap verileri</strong> (hesap bilgileri, çocuk profili, masallar, çizimler, ses örnekleri, sosyal veriler): hesabınızı silene kadar.</li>
+          <li><strong>Misafir masalları:</strong> 7 gün sonra otomatik silinir.</li>
+          <li><strong>Fotoğrafla giydirme fotoğrafı:</strong> analizden hemen sonra silinir; analiz sonucu hesapla birlikte saklanır.</li>
+          <li><strong>Ham analitik olay kayıtları:</strong> 365 gün sonra otomatik silinir.</li>
+          <li><strong>Satın alma kayıtları:</strong> Apple, Google ve RevenueCat tarafından vergi ve muhasebe yükümlülükleri gereği saklanır.</li>
+          <li><strong>Anonimleştirilmiş veya toplu istatistikler:</strong> kimseyi tanımlamayacak biçimde daha uzun süre tutulabilir.</li>
+          <li><strong>Yedekler:</strong> Silinen veriler sınırlı bir süre yedeklerde kalabilir.</li>
         </ul>
+
+        <h2 id="guvenlik">12. Güvenlik</h2>
+        <p>Uygulama ile sunucularımız ve hizmet sağlayıcılarımız arasındaki veri aktarımı şifrelenir (HTTPS/TLS). IP adresi yalnızca tuzlanmış, tek yönlü bir özet olarak saklanır ve fotoğrafla giydirmede kullanılan fotoğraf analizden sonra silinir. Hiçbir yöntem tam güvenlik garanti etmez. Bir veri ihlali olursa yasal yükümlülüklerimize uygun şekilde ilgili makamlara ve size bildirim yaparız.</p>
+
+        <h2 id="haklar">13. Haklarınız</h2>
+        <h3>KVKK md. 11 kapsamındaki haklarınız</h3>
+        <ul class="legal-list">
+          <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme,</li>
+          <li>İşlenmişse buna ilişkin bilgi talep etme,</li>
+          <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+          <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+          <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
+          <li>KVKK md. 7'de öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li>
+          <li>Düzeltme, silme veya yok etme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+          <li>Münhasıran otomatik sistemlerle analiz edilmesi sonucunda aleyhinize bir sonuç ortaya çıkmasına itiraz etme,</li>
+          <li>Kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme.</li>
+        </ul>
+        <h3>GDPR kapsamındaki haklarınız (AB/AEA'daki kullanıcılar)</h3>
+        <p>Verilerinize erişme, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği, işlemeye itiraz etme ve rızanızı istediğiniz zaman geri alma haklarınız vardır. Rızanın geri alınması, geri almadan önceki işlemenin hukuka uygunluğunu etkilemez. Ülkenizdeki veri koruma otoritesine şikâyette bulunabilirsiniz.</p>
+        <h3>ABD'deki ebeveynler</h3>
+        <p>COPPA kapsamında çocuğunuz hakkında tuttuğumuz bilgileri inceleyebilir, silinmesini isteyebilir ve daha fazla toplanmasını reddedebilirsiniz. Bazı eyaletlerin (ör. Kaliforniya) yasaları ek haklar tanıyabilir.</p>
+        <h3>Nasıl başvurursunuz?</h3>
+        <p>Taleplerinizi <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> adresine iletebilirsiniz. Kimliğinizi doğrulamak için hesabınıza bağlı e-posta adresinden yazmanızı veya arkadaş kodunuzu belirtmenizi isteyebiliriz. Taleplere en geç 30 gün içinde yanıt veririz. Türkiye'den yapılacak başvuruların usulü <a href="kvkk-aydinlatma.html#basvuru">KVKK Aydınlatma Metni</a>'nde açıklanmıştır; başvurunuzun reddedilmesi veya yanıtı yetersiz bulmanız hâlinde Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz.</p>
+
+        <h2 id="silme">14. Hesap ve veri silme</h2>
+        <p><strong>Uygulama içinden:</strong> Ana ekranda <strong>Profilim</strong>'e dokunun → istenirse ebeveyn doğrulamasını tamamlayın → <strong>Hesap İşlemleri</strong> bölümünde <strong>Üyeliği Sil</strong>'e dokunun ve onaylayın.</p>
+        <p><strong>E-posta ile:</strong> Uygulamaya erişemiyorsanız (misafir kullanımlar dahil) <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> adresine hesabınıza bağlı e-posta adresini veya arkadaş kodunuzu belirterek yazın. Ayrıntılar: <a href="hesap-silme.html">Hesap ve Veri Silme</a>.</p>
+        <p><strong>Silinenler:</strong> hesap, çocuk profili, masallar, masal istekleri, yapay zekâ istek kayıtları, çizimler, ses örnekleri ve ses klonları, fotoğraflar ve analiz sonuçları, içerik bildirimleri (raporlar), arkadaşlıklar ve hediyeler, analitik profili ve bildirim kuyruğu kayıtları sunucu tarafında silinir.</p>
+        <p><strong>Saklananlar:</strong> Apple, Google ve RevenueCat'te vergi ve muhasebe için tutulan satın alma kayıtları; kimseyi tanımlamayan anonimleştirilmiş veya toplu istatistikler. Silinen veriler sınırlı bir süre yedeklerde kalabilir. Silme talepleri en geç 30 gün içinde sonuçlandırılır.</p>
+        <p>Hesabınızı silmek App Store veya Google Play aboneliğinizi otomatik olarak iptal etmez; aboneliğinizi mağaza hesap ayarlarınızdan iptal edin.</p>
+
+        <h2 id="web-sitesi">15. Web sitesi</h2>
+        <p>fabyfun.com'da analiz veya reklam çerezi kullanmıyoruz. Seçtiğiniz site dili tarayıcınızın yerel depolamasında (localStorage) tutulur. Site, yazı tiplerini Google Fonts'tan ve bir stil kütüphanesini cdn.tailwindcss.com üzerinden yükler; bu nedenle tarayıcınızın IP adresi bu sağlayıcılara iletilir. Sitenin barındırma sağlayıcısı standart sunucu kayıtları (ör. IP adresi) tutabilir.</p>
+
+        <h2 id="degisiklikler">16. Değişiklikler</h2>
+        <p>Bu politikayı uygulamadaki veya yasal düzenlemelerdeki değişikliklere göre güncelleyebiliriz. Güncel metin bu sayfada yayımlanır ve en üstteki tarih değişir. Önemli değişiklikleri uygulama içinde veya bu web sitesinde ayrıca duyururuz. Bir değişiklik yeni bir rıza gerektiriyorsa rızanızı ayrıca isteriz.</p>
+
+        <h2 id="iletisim-bilgileri">17. İletişim</h2>
+        <ul class="legal-list">
+          <li><strong>Veri sorumlusu:</strong> Yelkovan.ai (Yiğit Özdemir)</li>
+          <li><strong>E-posta:</strong> <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a></li>
+        </ul>
+        <p>İlgili sayfalar: <a href="kvkk-aydinlatma.html">KVKK Aydınlatma Metni</a> · <a href="acik-riza.html">Açık Rıza Metni</a> · <a href="hesap-silme.html">Hesap ve Veri Silme</a> · <a href="cocuk-guvenligi.html">Çocuk Güvenliği Standartları</a> · <a href="kullanim-sartlari.html">Kullanım Şartları</a></p>
     </div>
   </main>
 <footer class="site-footer pt-16 pb-8 border-t border-white/10" id="iletisim">
@@ -174,6 +403,7 @@
             <li><a href="features.html" class="footer-link" data-i18n="footer_feat">Özellikler</a></li>
             <li><a href="stories.html" class="footer-link" data-i18n="nav_stories">Masallar</a></li>
             <li><a href="index.html#indir" class="footer-link" data-i18n="footer_dl">İndir</a></li>
+            <li><a href="ebeveynler.html" class="footer-link" data-i18n="nav_parents">Ebeveynler</a></li>
           </ul>
         </div>
         <div>
@@ -196,6 +426,9 @@
             <li><a href="iletisim.html" class="footer-link">İletişim</a></li>
             <li><a href="kullanim-sartlari.html" class="footer-link" data-i18n="footer_terms">Kullanıcı Sözleşmesi</a></li>
             <li><a href="gizlilik.html" class="footer-link" data-i18n="footer_privacy">Gizlilik Politikası</a></li>
+            <li><a href="kvkk-aydinlatma.html" class="footer-link" data-i18n="footer_kvkk">KVKK Aydınlatma Metni</a></li>
+            <li><a href="hesap-silme.html" class="footer-link" data-i18n="footer_delete">Hesap Silme</a></li>
+            <li><a href="cocuk-guvenligi.html" class="footer-link" data-i18n="footer_child_safety">Çocuk Güvenliği</a></li>
             <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" class="footer-link" data-i18n="footer_eula">Son Kullanıcı Lisans Sözleşmesi</a></li>
           </ul>
         </div>
