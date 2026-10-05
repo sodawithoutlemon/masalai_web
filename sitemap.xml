@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://www.fabyfun.com/hakkimizda.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://www.fabyfun.com/gizlilik.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -134,7 +134,7 @@
   </url>
   <url>
     <loc>https://www.fabyfun.com/en/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -170,31 +170,43 @@
   </url>
   <url>
     <loc>https://www.fabyfun.com/es/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.fabyfun.com/fr/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.fabyfun.com/ar/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.fabyfun.com/hi/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.fabyfun.com/zh/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.fabyfun.com/de/privacy.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.fabyfun.com/pt/privacy.html</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
