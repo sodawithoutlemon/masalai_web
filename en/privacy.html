@@ -135,7 +135,7 @@
   <main class="pt-32 pb-20">
     <div class="legal-wrap">
         <h1>Privacy Policy</h1>
-        <p class="legal-meta">Last updated: October 6, 2026 · Applies to the Faby mobile app (iOS and Android, version 5.3.0) and fabyfun.com.</p>
+        <p class="legal-meta">Last updated: October 19, 2026 · Applies to the Faby mobile app (iOS and Android, version 6.0.0) and fabyfun.com.</p>
         <p class="lang-links">Other languages: <a href="../gizlilik.html" hreflang="tr">Türkçe (full text)</a> · <a href="../es/privacy.html" hreflang="es">Español</a> · <a href="../fr/privacy.html" hreflang="fr">Français</a> · <a href="../ar/privacy.html" hreflang="ar">العربية</a> · <a href="../hi/privacy.html" hreflang="hi">हिन्दी</a> · <a href="../zh/privacy.html" hreflang="zh">中文</a> · <a href="../de/privacy.html" hreflang="de">Deutsch</a> · <a href="../pt/privacy.html" hreflang="pt-BR">Português (Brasil)</a> (summaries)</p>
 
         <div class="legal-note">
@@ -206,13 +206,13 @@
               <tr>
                 <td><strong>Child (character) profile</strong>: name, story age band (2-4, 4-6, 6-8, 8-10, 10-12, 12+), gender, appearance description (skin, hair and eye colour, clothes, etc.)</td>
                 <td>Creating personalised story text, illustrations and narration</td>
-                <td>Anthropic (story text, including the name); image models on Replicate and sometimes OpenAI (appearance description only, without the name); Minimax text-to-speech on Replicate (story text, which may include the name)</td>
+                <td>Anthropic (story text, including the name); image models on Replicate and sometimes OpenAI (appearance description only, without the name); Gemini text-to-speech on Google Cloud Vertex AI (story text, which may include the name; Minimax on Replicate as a backup)</td>
                 <td>Until you delete your account</td>
               </tr>
               <tr>
                 <td><strong>Story inputs</strong>: free text such as names, themes or a lesson to convey (max. 200 characters) and the options you choose</td>
                 <td>Writing the story you asked for</td>
-                <td>Anthropic; the story text goes to Replicate for narration</td>
+                <td>Anthropic; the story text goes to Google (Vertex AI; backup: Replicate) for narration</td>
                 <td>Until you delete your account</td>
               </tr>
               <tr>
@@ -246,8 +246,8 @@
                 <td>Raw event records expire automatically after 365 days; your analytics profile is deleted with your account</td>
               </tr>
               <tr>
-                <td><strong>Google Firebase Analytics</strong> (in the Android app and in iOS versions before 5.3.0): purchase events and the standard app and device data Google collects through this tool. Advertising ID collection is disabled.</td>
-                <td>Measuring purchases as conversions for our Google Ads campaigns</td>
+                <td><strong>Google Firebase Analytics</strong> (in the Android app and in iOS versions before 5.3.0): purchase and story-creation events and the standard app and device data Google collects through this tool. Advertising ID collection and personalised ads are disabled.</td>
+                <td>Measuring purchases and story creation as conversions for our Google Ads campaigns</td>
                 <td>Google</td>
                 <td>Subject to Google's retention settings and policies</td>
               </tr>
@@ -289,7 +289,8 @@
         <p>We use the following providers to write, illustrate and narrate stories for you. All of them are located in the United States:</p>
         <ul class="legal-list">
           <li><strong>Anthropic (Claude)</strong> — writes the story text. It receives the full story input together with the child (character) profile, including the name.</li>
-          <li><strong>Replicate</strong> — runs the image models that create illustrations (appearance description, without the name), the Minimax text-to-speech model (story text, which may include the name) and the XTTS model for voice cloning (the adult's voice sample and the story text).</li>
+          <li><strong>Google (Gemini, Vertex AI)</strong> — narrates the stories. It receives the story text (which may include the name). Under Google Cloud's terms, this data is not used to train Google's models.</li>
+          <li><strong>Replicate</strong> — runs the image models that create illustrations (appearance description, without the name), the backup Minimax text-to-speech model (story text, which may include the name) and the XTTS model for voice cloning (the adult's voice sample and the story text).</li>
           <li><strong>OpenAI</strong> — an image model for some illustrations (appearance description, without the name), the one-time analysis of the photo in "dress by photo", and the analysis of drawings.</li>
         </ul>
         <p>These providers process data to provide the service to us. Their own retention and use practices are governed by the terms between us and by their own policies.</p>
@@ -308,7 +309,7 @@
           <li><strong>Our own analytics:</strong> We measure how the app is used on our own servers on Google Firebase / Google Cloud (EU region europe-west1). This involves a random device ID, in-app events, device model, operating system, app language, time zone and the country derived from the IP address using an offline database. The IP address itself is not stored; only a salted one-way hash is stored. Raw event records expire automatically after 365 days.</li>
           <li><strong>This analytics is not anonymous:</strong> records are linked to your user ID and device ID.</li>
           <li><strong>Crash and performance data</strong> is collected by the same first-party system; Firebase Crashlytics is not used.</li>
-          <li><strong>Google Firebase Analytics</strong> is used in the Android app (and in iOS versions before 5.3.0) to measure purchases as Google Ads conversions. Advertising ID collection is disabled.</li>
+          <li><strong>Google Firebase Analytics</strong> is used in the Android app (and in iOS versions before 5.3.0) to measure purchases and story creation as Google Ads conversions; these events are shared with Google only for ad measurement. Advertising ID collection and personalised ads are disabled.</li>
           <li>You can contact us to object to processing for analytics purposes.</li>
         </ul>
 
@@ -328,12 +329,12 @@
           <li><strong>Performance of a contract</strong> (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)): account, story creation (including sending the story details and drawings you provide to AI providers to create the story), purchases, service notifications, social features.</li>
           <li><strong>Consent</strong> (GDPR Art. 6(1)(a), Art. 8 and Art. 9(2)(a); KVKK Art. 5(1) and Art. 6): sending a child's photo to an AI provider for Dress Up with a Photo (the app asks before a photo is taken or chosen), voice cloning (the app asks before recording), promotional notifications (device notification permission and the in-app switch).</li>
           <li><strong>Legal obligation</strong> (GDPR Art. 6(1)(c); KVKK Art. 5(2)(ç)): purchase and accounting records, requests from competent authorities.</li>
-          <li><strong>Legitimate interests</strong> (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)): in-app analytics, error and performance monitoring, security, non-personalised ads in the free section and purchase conversion measurement.</li>
+          <li><strong>Legitimate interests</strong> (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)): in-app analytics, error and performance monitoring, security, non-personalised ads in the free section and purchase and story-creation conversion measurement.</li>
           <li><strong>Establishing, exercising or defending legal claims</strong> (GDPR Art. 9(2)(f) where relevant; KVKK Art. 5(2)(e)): requests, reports and possible disputes.</li>
         </ul>
 
         <h2 id="transfers">10. International transfers</h2>
-        <p>Our data is hosted mainly in Google Cloud's EU region (europe-west1); some Google services may process data in the United States or other countries. Anthropic, OpenAI, Replicate (including the Minimax text-to-speech and XTTS models) and RevenueCat are in the United States. Google AdMob and Apple's and Google's sign-in and store services operate in multiple countries.</p>
+        <p>Our data is hosted mainly in Google Cloud's EU region (europe-west1); some Google services may process data in the United States or other countries. Anthropic, OpenAI, Replicate (including the backup Minimax text-to-speech and XTTS models) and RevenueCat are in the United States. Narration requests to Google Vertex AI may be processed on Google's global infrastructure. Google AdMob and Apple's and Google's sign-in and store services operate in multiple countries.</p>
         <p>These transfers are subject to Article 9 of the KVKK and the GDPR's rules on international transfers. For transfers we rely on appropriate safeguards such as standard contractual clauses (the EU Standard Contractual Clauses) and, where necessary, your explicit consent. These countries may not have data protection rules equivalent to those in Turkey or the EU. You can contact us to find out which safeguard a transfer relies on.</p>
 
         <h2 id="retention">11. Retention</h2>

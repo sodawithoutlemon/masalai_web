@@ -135,7 +135,7 @@
   <main class="pt-32 pb-20">
     <div class="legal-wrap">
         <h1>Gizlilik Politikası</h1>
-        <p class="legal-meta">Son güncelleme: 6 Ekim 2026 · Faby mobil uygulaması (iOS ve Android, sürüm 5.3.0) ve fabyfun.com için geçerlidir.</p>
+        <p class="legal-meta">Son güncelleme: 19 Ekim 2026 · Faby mobil uygulaması (iOS ve Android, sürüm 6.0.0) ve fabyfun.com için geçerlidir.</p>
         <p class="lang-links">Diğer diller: <a href="en/privacy.html" hreflang="en">English (tam metin)</a> · <a href="es/privacy.html" hreflang="es">Español</a> · <a href="fr/privacy.html" hreflang="fr">Français</a> · <a href="ar/privacy.html" hreflang="ar">العربية</a> · <a href="hi/privacy.html" hreflang="hi">हिन्दी</a> · <a href="zh/privacy.html" hreflang="zh">中文</a> · <a href="de/privacy.html" hreflang="de">Deutsch</a> · <a href="pt/privacy.html" hreflang="pt-BR">Português (Brasil)</a> (özet)</p>
 
         <div class="legal-note">
@@ -206,13 +206,13 @@
               <tr>
                 <td><strong>Çocuk (karakter) profili</strong>: ad, masal yaş aralığı (2-4, 4-6, 6-8, 8-10, 10-12, 12+), cinsiyet, görünüm tarifi (ten, saç ve göz rengi, kıyafet vb.)</td>
                 <td>Kişiselleştirilmiş masal metni, illüstrasyon ve seslendirme üretmek</td>
-                <td>Anthropic (masal metni; ad dahil), Replicate üzerindeki görsel modelleri ve bazen OpenAI (yalnızca görünüm tarifi, ad olmadan), Replicate üzerindeki Minimax seslendirme modeli (masal metni; adı içerebilir)</td>
+                <td>Anthropic (masal metni; ad dahil), Replicate üzerindeki görsel modelleri ve bazen OpenAI (yalnızca görünüm tarifi, ad olmadan), Google Cloud Vertex AI üzerindeki Gemini seslendirme modeli (masal metni; adı içerebilir; gerekirse yedek olarak Replicate üzerindeki Minimax)</td>
                 <td>Hesabınızı silene kadar</td>
               </tr>
               <tr>
                 <td><strong>Masal girdileri</strong>: isimler, temalar, verilmek istenen ders gibi serbest metinler (en fazla 200 karakter) ve seçtiğiniz seçenekler</td>
                 <td>Masalı isteğinize göre yazmak</td>
-                <td>Anthropic; seslendirme için masal metni Replicate'e</td>
+                <td>Anthropic; seslendirme için masal metni Google'a (Vertex AI; yedek: Replicate)</td>
                 <td>Hesabınızı silene kadar</td>
               </tr>
               <tr>
@@ -246,7 +246,7 @@
                 <td>Ham olay kayıtları 365 gün sonra otomatik olarak silinir; analitik profiliniz hesabınızla birlikte silinir</td>
               </tr>
               <tr>
-                <td><strong>Google Firebase Analytics</strong> (Android uygulamasında ve 5.3.0'dan önceki iOS sürümlerinde): satın alma olayları ile Google'ın bu araçla topladığı standart uygulama ve cihaz bilgileri. Reklam kimliği toplama kapalıdır.</td>
+                <td><strong>Google Firebase Analytics</strong> (Android uygulamasında ve 5.3.0'dan önceki iOS sürümlerinde): satın alma ve masal oluşturma olayları ile Google'ın bu araçla topladığı standart uygulama ve cihaz bilgileri. Reklam kimliği toplama ve kişiselleştirilmiş reklam kapalıdır.</td>
                 <td>Google Ads kampanyalarımızın satın almaya dönüşümünü ölçmek</td>
                 <td>Google</td>
                 <td>Google'ın saklama ayarlarına ve politikalarına tabidir</td>
@@ -289,7 +289,8 @@
         <p>Masalları sizin için yazmak, resimlemek ve seslendirmek amacıyla aşağıdaki sağlayıcıları kullanırız. Hepsi ABD'de bulunmaktadır:</p>
         <ul class="legal-list">
           <li><strong>Anthropic (Claude)</strong> — masal metnini yazar. Masal girdisinin tamamını, çocuk (karakter) profiliyle birlikte, ad dahil alır.</li>
-          <li><strong>Replicate</strong> — illüstrasyonları üreten görsel modellerini (görünüm tarifi, ad olmadan), Minimax seslendirme modelini (masal metni, adı içerebilir) ve ses klonlama için XTTS modelini (yetişkinin ses örneği ve masal metni) çalıştırır.</li>
+          <li><strong>Google (Gemini, Vertex AI)</strong> — masalları seslendirir. Masal metnini alır (adı içerebilir). Google Cloud koşulları gereği bu veriler Google'ın modellerini eğitmek için kullanılmaz.</li>
+          <li><strong>Replicate</strong> — illüstrasyonları üreten görsel modellerini (görünüm tarifi, ad olmadan), yedek seslendirme modeli Minimax'ı (masal metni, adı içerebilir) ve ses klonlama için XTTS modelini (yetişkinin ses örneği ve masal metni) çalıştırır.</li>
           <li><strong>OpenAI</strong> — bazı illüstrasyonlar için görsel modeli (görünüm tarifi, ad olmadan), fotoğrafla giydirmede fotoğrafın bir kez analizi ve çizimlerin analizi.</li>
         </ul>
         <p>Bu sağlayıcılar verileri, hizmeti bize sunmak amacıyla işler. Sağlayıcıların kendi saklama ve kullanım uygulamaları, onlarla aramızdaki koşullara ve kendi politikalarına tabidir.</p>
@@ -308,7 +309,7 @@
           <li><strong>Kendi analitiğimiz:</strong> Uygulamanın nasıl kullanıldığını, Google Firebase / Google Cloud üzerindeki kendi sunucularımızda (AB bölgesi europe-west1) ölçeriz. Bu kapsamda rastgele bir cihaz kimliği, uygulama içi olaylar, cihaz modeli, işletim sistemi, uygulama dili, saat dilimi ve IP adresinden çevrimdışı bir veritabanıyla belirlenen ülke işlenir. IP adresinin kendisi saklanmaz; yalnızca tuzlanmış, tek yönlü bir özeti saklanır. Ham olay kayıtları 365 gün sonra otomatik olarak silinir.</li>
           <li><strong>Bu analitik anonim değildir:</strong> Kayıtlar kullanıcı kimliğiniz ve cihaz kimliğinizle ilişkilidir.</li>
           <li><strong>Çökme ve performans bilgileri</strong> de aynı kendi sistemimizle toplanır; Firebase Crashlytics kullanılmaz.</li>
-          <li><strong>Google Firebase Analytics:</strong> Android uygulamasında (ve 5.3.0'dan önceki iOS sürümlerinde) satın almaları Google Ads dönüşümü olarak ölçmek için kullanılır. Reklam kimliği toplama kapalıdır.</li>
+          <li><strong>Google Firebase Analytics:</strong> Android uygulamasında (ve 5.3.0'dan önceki iOS sürümlerinde) satın almaları ve masal oluşturmayı Google Ads dönüşümü olarak ölçmek için kullanılır; bu olaylar Google ile yalnız reklam ölçümü için paylaşılır. Reklam kimliği toplama ve kişiselleştirilmiş reklam kapalıdır.</li>
           <li>Analitik amaçlı işlemeye itiraz etmek için bize yazabilirsiniz.</li>
         </ul>
 
@@ -333,7 +334,7 @@
         </ul>
 
         <h2 id="yurt-disi">10. Yurt dışına aktarım</h2>
-        <p>Verilerimiz ağırlıklı olarak Google Cloud'un AB bölgesinde (europe-west1) barındırılır; bazı Google hizmetleri verileri ABD'de veya başka ülkelerde işleyebilir. Anthropic, OpenAI, Replicate (Minimax seslendirme ve XTTS modelleri dahil) ve RevenueCat ABD'dedir. Google AdMob ile Apple ve Google'ın oturum açma ve mağaza hizmetleri birden fazla ülkede çalışır.</p>
+        <p>Verilerimiz ağırlıklı olarak Google Cloud'un AB bölgesinde (europe-west1) barındırılır; bazı Google hizmetleri verileri ABD'de veya başka ülkelerde işleyebilir. Anthropic, OpenAI, Replicate (yedek Minimax seslendirme ve XTTS modelleri dahil) ve RevenueCat ABD'dedir. Masal seslendirmesi için Google Vertex AI'ye giden istekler Google'ın küresel altyapısında işlenebilir. Google AdMob ile Apple ve Google'ın oturum açma ve mağaza hizmetleri birden fazla ülkede çalışır.</p>
         <p>Bu aktarımlar KVKK md. 9 ve GDPR'ın uluslararası aktarım kurallarına tabidir. Aktarımlarda standart sözleşme hükümleri (AB Standart Sözleşme Maddeleri) gibi uygun güvencelere ve gerektiğinde açık rızanıza dayanırız. Bu ülkelerde Türkiye veya AB ile aynı düzeyde veri koruma kuralları bulunmayabilir. Bir aktarımın hangi güvenceye dayandığını öğrenmek için bize yazabilirsiniz.</p>
 
         <h2 id="saklama">11. Saklama süreleri</h2>

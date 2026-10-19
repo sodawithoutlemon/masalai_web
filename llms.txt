@@ -4,8 +4,8 @@
 > uygulamadır. Ebeveyn çocuğun adını, yaşını ve ilgi alanını girer; uygulama o
 > çocuğun kahraman olduğu özgün bir masal yazar, illüstrasyonlarını üretir ve
 > sesli okur. Klasik dünya masallarından oluşan bir kütüphane de içerir.
-> Uygulama yedi dilde çalışır (Türkçe, İngilizce, İspanyolca, Fransızca,
-> Arapça, Hintçe, Çince); bu web sitesi ağırlıklı olarak Türkçedir.
+> Uygulama dokuz dilde çalışır (Türkçe, İngilizce, İspanyolca, Fransızca,
+> Arapça, Hintçe, Çince, Almanca, Portekizce); bu web sitesi ağırlıklı olarak Türkçedir.
 > Site ayrıca çocuk gelişimi ve ebeveynlik üzerine uzun biçimli bir blog barındırır.
 
 ## Ürün sayfaları
