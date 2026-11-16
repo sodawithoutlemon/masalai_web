@@ -1,0 +1,48 @@
+# Faby — full description (English)
+
+> Faby is a mobile app for iOS and Android that creates personalized, illustrated
+> bedtime stories for children aged 2–12, with the child as the hero, and reads
+> them aloud. Website: https://www.fabyfun.com/en/ · Contact: info@yelkovan.ai
+
+## How it works
+
+1. A parent creates an account (Google, Apple or email) and describes the hero:
+   the child's name, age group, appearance and interests.
+2. The parent picks a theme, a lesson (value) and a mood, and can add friends or
+   a pet as side characters.
+3. Faby writes an original story with an AI language model, generates matching
+   illustrations and narrates the story with a selectable voice.
+4. Stories are saved to the family library to read again.
+
+## Main features
+
+- Personalized AI stories with the child as the hero (6 pages; 8–10 pages with Pro).
+- Illustrations in several drawing styles.
+- Read-aloud narration with several voices.
+- Interactive stories where the child makes choices (Pro).
+- A library of classic fairy tales (Cinderella, Snow White, Puss in Boots, …).
+- Drawing tools, quizzes and a story dictionary.
+- Weekly parent report in the app; optional weekly report email for Pro parents.
+- Nine app languages: English, Turkish, Spanish, French, German, Brazilian
+  Portuguese, Arabic, Hindi, Chinese.
+
+## Pricing
+
+- Free to download. A guest can create one story for free.
+- Faby Pro: monthly or yearly subscription through the App Store or Google Play.
+  Includes 10 new stories a week, longer stories, extra voices and drawing styles,
+  interactive stories, the full weekly report and the weekly report email.
+  Where offered, the yearly plan starts with a free trial.
+- Coins: one-time packs; a standard story costs 100 coins, an interactive story 150.
+
+## Safety and privacy
+
+- iOS: listed in the Apple Kids category (Made for Ages 6–8); no ads, no
+  third-party analytics and no SKAdNetwork on iOS.
+- A parental gate protects every purchase and every link that leaves the app,
+  and is never remembered.
+- No free-text chat between users; nicknames are chosen from word lists.
+- AI providers receive only what is needed to write, illustrate and narrate a
+  story. Full details: https://www.fabyfun.com/en/privacy.html
+- Accounts and data can be deleted in the app or by email:
+  https://www.fabyfun.com/en/delete-account.html

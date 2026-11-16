@@ -1,5 +1,27 @@
 # Faby
 
+> Faby is a mobile app (iOS and Android) that writes personalized, illustrated
+> bedtime stories for children aged 2–12 with the child as the hero, and reads
+> them aloud. A parent enters the child's name, age and interests; Faby writes an
+> original story, illustrates it and narrates it. It also includes a library of
+> classic fairy tales, interactive stories with choices, and a weekly report for
+> parents. The app works in nine languages (English, Turkish, Spanish, French,
+> German, Brazilian Portuguese, Arabic, Hindi, Chinese).
+
+## In English
+
+- [Faby – Home (English)](https://www.fabyfun.com/en/): What Faby does, how personalized AI bedtime stories work, classic fairy tales, download links.
+- [Features (English)](https://www.fabyfun.com/en/features.html): AI story creation, character personalization, illustrations, read-aloud voices, interactive stories, parent tools.
+- [Parent Summary](https://www.fabyfun.com/en/parents.html): One-page summary of data, recipients, ads, deletion and reporting.
+- [Privacy Policy](https://www.fabyfun.com/en/privacy.html) · [Terms of Use](https://www.fabyfun.com/en/terms.html) · [Child Safety Standards](https://www.fabyfun.com/en/child-safety.html) · [Delete Your Account](https://www.fabyfun.com/en/delete-account.html)
+- Pricing: free download; Faby Pro subscription (monthly or yearly) with 10 stories a week, longer stories, extra voices and styles, and an optional weekly email report for parents. Coins can also be bought for single stories.
+- Child safety: Apple Kids category (Made for Ages 6–8) on iOS — no ads or third-party analytics on iOS; every purchase and outbound link sits behind a parental gate; no free-text chat between users.
+- More detail: [llms-full.txt](https://www.fabyfun.com/llms-full.txt)
+
+---
+
+# Faby (Türkçe)
+
 > Faby, çocuklar için yapay zekâ ile kişiselleştirilmiş masal üreten bir mobil
 > uygulamadır. Ebeveyn çocuğun adını, yaşını ve ilgi alanını girer; uygulama o
 > çocuğun kahraman olduğu özgün bir masal yazar, illüstrasyonlarını üretir ve
@@ -46,7 +68,7 @@ Türkçe ve İngilizce metinler resmîdir; diğer dillerdeki gizlilik sayfaları
 - [Gizlilik Politikası](https://www.fabyfun.com/gizlilik.html): Toplanan veriler (veri / amaç / alıcı / saklama tablosu), çocuk verisi ve ebeveyn rızası, yapay zekâ sağlayıcılarına aktarım (Anthropic, OpenAI, Replicate), reklamlar (Android AdMob), analitik, bildirimler, sosyal özellikler, yurt dışı aktarım, saklama, haklar (KVKK, GDPR, COPPA) ve silme.
 - [Privacy Policy (English)](https://www.fabyfun.com/en/privacy.html): Gizlilik politikasının İngilizce tam metni.
 - Gizlilik özeti: [Español](https://www.fabyfun.com/es/privacy.html), [Français](https://www.fabyfun.com/fr/privacy.html), [العربية](https://www.fabyfun.com/ar/privacy.html), [हिन्दी](https://www.fabyfun.com/hi/privacy.html), [中文](https://www.fabyfun.com/zh/privacy.html), [Deutsch](https://www.fabyfun.com/de/privacy.html), [Português (Brasil)](https://www.fabyfun.com/pt/privacy.html): Kısa gizlilik özeti ve hesap silme adımları.
-- [Kullanım Şartları](https://www.fabyfun.com/kullanim-sartlari.html) / [Terms of Use](https://www.fabyfun.com/en/terms.html): Hesap, ebeveyn sorumluluğu, yapay zekâ içeriği, Faby Pro (haftada 7 masal), jetonlar, otomatik yenilenen abonelikler, reklamlar, kabul edilebilir kullanım, fesih.
+- [Kullanım Şartları](https://www.fabyfun.com/kullanim-sartlari.html) / [Terms of Use](https://www.fabyfun.com/en/terms.html): Hesap, ebeveyn sorumluluğu, yapay zekâ içeriği, Faby Pro (haftada 10 masal), jetonlar, otomatik yenilenen abonelikler, reklamlar, kabul edilebilir kullanım, fesih.
 - [KVKK Aydınlatma Metni](https://www.fabyfun.com/kvkk-aydinlatma.html): 6698 sayılı KVKK md. 10 aydınlatma metni (yalnızca Türkçe).
 - [Açık Rıza Metni](https://www.fabyfun.com/acik-riza.html) / [Parental Consent](https://www.fabyfun.com/en/consent.html): Çocuk profili, fotoğraf, çizim ve ses verilerinin işlenmesi ile yurt dışındaki yapay zekâ sağlayıcılarına aktarım için ebeveyn rızası.
 - [Hesap ve Veri Silme](https://www.fabyfun.com/hesap-silme.html) / [Delete Your Account](https://www.fabyfun.com/en/delete-account.html): Uygulama içinden ve e-posta ile hesap silme, silinen ve saklanan veriler, işlem süresi.

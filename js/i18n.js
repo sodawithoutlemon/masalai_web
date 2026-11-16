@@ -15,9 +15,20 @@ const I18N = {
     // hreflang: BCP 47 tag used in <link rel="alternate" hreflang> and <html lang> (content is pt-BR)
     pt: { flag: '🇧🇷', name: 'Português', hreflang: 'pt-BR' }
   },
+  // Store links per language (6.1.0 D): Turkish keeps the TR storefront; other
+  // languages use the storefront-neutral App Store link (Apple redirects to the
+  // visitor's country) and Play's hl= for the listing language.
   appLinks: {
     ios:     'https://apps.apple.com/tr/app/faby-masal-ve-hikaye-olu%C5%9Ftur/id6757192081?l=tr',
     android: 'https://play.google.com/store/apps/details?id=com.ay.masalai&hl=tr'
+  },
+  appLinksFor: function (lang) {
+    if (lang === 'tr') return this.appLinks;
+    const hl = { pt: 'pt-BR', zh: 'zh-CN' }[lang] || lang;
+    return {
+      ios: 'https://apps.apple.com/app/id6757192081',
+      android: 'https://play.google.com/store/apps/details?id=com.ay.masalai&hl=' + hl
+    };
   },
   socialLinks: {
     tr: {
@@ -407,14 +418,14 @@ function setLanguage(lang, opts) {
   const shots = I18N.screenshotMap[lang];
   if (shots) {
     document.querySelectorAll('[data-screenshot]').forEach((el, i) => {
-      if (shots[i]) el.src = 'images/market_screenshots/' + shots[i];
+      if (shots[i]) el.src = '/images/market_screenshots/' + shots[i];
     });
   }
 
   // Update hero screenshot too
   const heroImg = document.querySelector('.hero-phone-mockup img');
   if (heroImg && shots && shots[0]) {
-    heroImg.src = 'images/market_screenshots/' + shots[0];
+    heroImg.src = '/images/market_screenshots/' + shots[0];
   }
 
   // Update social links per language
@@ -426,10 +437,11 @@ function setLanguage(lang, opts) {
     });
   }
 
-  // Update app store links (same for all languages)
+  // Update app store links (storefront/listing language follows the page language)
+  const storeLinks = I18N.appLinksFor(lang);
   document.querySelectorAll('[data-store]').forEach(el => {
     const key = el.getAttribute('data-store');
-    if (I18N.appLinks[key]) el.href = I18N.appLinks[key];
+    if (storeLinks[key]) el.href = storeLinks[key];
   });
 
   // Update active language in dropdown
